@@ -1,0 +1,9 @@
+{
+    "KPackageStructure": "Plasma/Wallpaper",
+    "KPlugin": {
+        "Id": "RetroDIN-lockwall",
+        "Name": "Retro DIN Lock Wallpaper",
+        "Description": "Charcoal-composited CRT noise still frame, used as the lock/desktop wallpaper substitute for the Retro DIN theme's lock screen (see design spec §3)",
+        "License": "GPL-3.0"
+    }
+}
