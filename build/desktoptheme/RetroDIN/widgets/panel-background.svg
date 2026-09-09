@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="metalgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34393b"/>
+      <stop offset="0.45" stop-color="#232829"/>
+      <stop offset="1" stop-color="#16191a"/>
+    </linearGradient>
+    <pattern id="scratches" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="url(#metalgrad)"/>
+      <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+        <line x1="0" y1="4" x2="16" y2="0"/>
+        <line x1="0" y1="12" x2="16" y2="8"/>
+        <line x1="4" y1="16" x2="16" y2="13"/>
+      </g>
+      <g stroke="#000000" stroke-opacity="0.06" stroke-width="1">
+        <line x1="0" y1="9" x2="16" y2="15"/>
+        <line x1="-2" y1="2" x2="10" y2="16"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <!-- margin hints: 6px safe area on every edge before content may draw -->
+  <rect id="hint-top-margin" x="0" y="0" width="1" height="6"/>
+  <rect id="hint-bottom-margin" x="0" y="58" width="1" height="6"/>
+  <rect id="hint-left-margin" x="0" y="0" width="6" height="1"/>
+  <rect id="hint-right-margin" x="58" y="0" width="6" height="1"/>
+  <rect id="hint-tile-center" x="0" y="0" width="1" height="1"/>
+
+  <!-- corners: fixed 8x8, specular highlight only in topleft per spec's tiling constraint -->
+  <g id="topleft">
+    <rect x="0" y="0" width="8" height="8" fill="url(#metalgrad)"/>
+    <circle cx="2" cy="2" r="6" fill="#ffffff" opacity="0.10"/>
+  </g>
+  <rect id="topright" x="56" y="0" width="8" height="8" fill="url(#metalgrad)"/>
+  <rect id="bottomleft" x="0" y="56" width="8" height="8" fill="url(#metalgrad)"/>
+  <rect id="bottomright" x="56" y="56" width="8" height="8" fill="url(#metalgrad)"/>
+
+  <!-- edges: stretch along their single axis -->
+  <rect id="top" x="8" y="0" width="48" height="8" fill="url(#metalgrad)"/>
+  <rect id="bottom" x="8" y="56" width="48" height="8" fill="url(#metalgrad)"/>
+  <rect id="left" x="0" y="8" width="8" height="48" fill="url(#metalgrad)"/>
+  <rect id="right" x="56" y="8" width="8" height="48" fill="url(#metalgrad)"/>
+
+  <!-- center: tiles via the scratches pattern, no positional highlight baked in -->
+  <rect id="center" x="8" y="8" width="48" height="48" fill="url(#scratches)"/>
+</svg>
