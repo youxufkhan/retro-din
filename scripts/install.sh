@@ -17,4 +17,7 @@ ln -sfT "$(pwd)/build/lookandfeel/com.retrodin.theme" \
 mkdir -p ~/.local/share/wallpapers
 ln -sfT "$(pwd)/build/wallpapers/RetroDIN-lockwall" \
     ~/.local/share/wallpapers/RetroDIN-lockwall
+mkdir -p ~/.local/share/icons
+ln -sfT "$(pwd)/build/icons/RetroDIN" \
+    ~/.local/share/icons/RetroDIN
 echo "Installed (symlinked). Run plasma-apply-colorscheme RetroDIN to test the color scheme now."

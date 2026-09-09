@@ -1,0 +1,12 @@
+[Icon Theme]
+Name=Retro DIN
+Comment=90s car-stereo/hi-fi DIN unit icon overrides, inheriting Breeze Dark
+Inherits=breeze-dark,hicolor
+Directories=places/scalable
+
+[places/scalable]
+Size=48
+MinSize=16
+MaxSize=512
+Type=Scalable
+Context=Places
