@@ -5,6 +5,9 @@ cd "$(dirname "$0")/.."
 
 ln -sfT "$(pwd)/build/color-schemes/RetroDIN.colors" \
     ~/.local/share/color-schemes/RetroDIN.colors
+# Plasma widgets and systray glyphs read colours from the desktoptheme's own
+# colors file, not kdeglobals; without it they fall back to breeze-dark white.
+cp build/color-schemes/RetroDIN.colors build/desktoptheme/RetroDIN/colors
 mkdir -p ~/.local/share/plasma/desktoptheme
 ln -sfT "$(pwd)/build/desktoptheme/RetroDIN" \
     ~/.local/share/plasma/desktoptheme/RetroDIN
