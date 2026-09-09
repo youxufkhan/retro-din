@@ -418,7 +418,7 @@ Confirmed by inspecting installed `tasks.svg`/`tasks.svgz` (both WinSur-dark and
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="48" viewBox="0 0 64 48">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="48" viewBox="0 0 64 48">
   <defs>
     <linearGradient id="btngrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#2c3133"/>
@@ -481,11 +481,11 @@ for state in states:
         # sample rect: 8x8 corners, stretch edges, tiling center — all reference
         # the same state <g> via <use>, cropped with a <clipPath> per piece so
         # every piece shows the right slice of that state's rounded-rect art.
-        lines.append(f'  <use id="{base_id}" href="#{state}" x="0" y="0"/>')
+        lines.append(f'  <use id="{base_id}" xlink:href="#{state}" x="0" y="0"/>')
     for orient in orientations[1:]:
         for piece in pieces:
             base_id = f"{state}-{piece}"
-            lines.append(f'  <use id="{orient}{base_id}" href="#{base_id}"/>')
+            lines.append(f'  <use id="{orient}{base_id}" xlink:href="#{base_id}"/>')
 
 print("\n".join(lines))
 ```
@@ -661,7 +661,7 @@ git commit -m "Add recessed-well dialog frame for menus/OSD/notifications"
 ## Task 6: Menu row states + tooltip
 
 **Files:**
-- Create: `build/desktoptheme/RetroDIN/widgets/listitem.svg`
+- Create: `build/desktoptheme/RetroDIN/widgets/listitem.svg` (root tag needs `xmlns:xlink="http://www.w3.org/1999/xlink"` alongside the base `xmlns`, same fix as Task 3, for the `<use xlink:href>` pieces added in Step 2)
 - Create: `build/desktoptheme/RetroDIN/widgets/tooltip.svg`
 - Test: inline via `scripts/validate.py svg`
 
@@ -673,7 +673,7 @@ git commit -m "Add recessed-well dialog frame for menus/OSD/notifications"
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
   <g id="normal">
     <rect width="32" height="32" fill="#001210" fill-opacity="0"/>
   </g>
@@ -701,7 +701,7 @@ pieces = ["topleft", "top", "topright", "left", "center", "right",
 lines = []
 for s in states:
     for p in pieces:
-        lines.append(f'  <use id="{s}-{p}" href="#{s}"/>')
+        lines.append(f'  <use id="{s}-{p}" xlink:href="#{s}"/>')
     for edge in ["top", "bottom", "left", "right"]:
         lines.append(f'  <rect id="{s}-hint-{edge}-margin" x="0" y="0" width="1" height="1"/>')
 path = "build/desktoptheme/RetroDIN/widgets/listitem.svg"
