@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="48" viewBox="0 0 64 48">
+  <defs>
+    <linearGradient id="btngrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c3133"/>
+      <stop offset="1" stop-color="#1a1e1f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shared 9-slice geometry per state, each state owns one <g id="STATE"> -->
+  <g id="normal">
+    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
+          stroke="#050606" stroke-width="1"/>
+  </g>
+  <g id="hover">
+    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
+          stroke="#0d6b60" stroke-width="1.5"/>
+  </g>
+  <g id="focus">
+    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
+          stroke="#ffb454" stroke-width="2"/>
+    <rect x="1" y="1" width="62" height="46" rx="3" fill="none"
+          stroke="#ffb454" stroke-opacity="0.5" stroke-width="4"/>
+  </g>
+  <g id="attention">
+    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
+          stroke="#ffd08a" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g id="minimized">
+    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
+          fill-opacity="0.5" stroke="#050606" stroke-width="1"/>
+  </g>
+  <g id="progress">
+    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
+          stroke="#14b8a6" stroke-width="1.5"/>
+  </g>
+  <use id="normal-topleft" xlink:href="#normal" x="0" y="0"/>
+  <use id="normal-top" xlink:href="#normal" x="0" y="0"/>
+  <use id="normal-topright" xlink:href="#normal" x="0" y="0"/>
+  <use id="normal-left" xlink:href="#normal" x="0" y="0"/>
+  <use id="normal-center" xlink:href="#normal" x="0" y="0"/>
+  <use id="normal-right" xlink:href="#normal" x="0" y="0"/>
+  <use id="normal-bottomleft" xlink:href="#normal" x="0" y="0"/>
+  <use id="normal-bottom" xlink:href="#normal" x="0" y="0"/>
+  <use id="normal-bottomright" xlink:href="#normal" x="0" y="0"/>
+  <use id="north-normal-topleft" xlink:href="#normal-topleft"/>
+  <use id="north-normal-top" xlink:href="#normal-top"/>
+  <use id="north-normal-topright" xlink:href="#normal-topright"/>
+  <use id="north-normal-left" xlink:href="#normal-left"/>
+  <use id="north-normal-center" xlink:href="#normal-center"/>
+  <use id="north-normal-right" xlink:href="#normal-right"/>
+  <use id="north-normal-bottomleft" xlink:href="#normal-bottomleft"/>
+  <use id="north-normal-bottom" xlink:href="#normal-bottom"/>
+  <use id="north-normal-bottomright" xlink:href="#normal-bottomright"/>
+  <use id="east-normal-topleft" xlink:href="#normal-topleft"/>
+  <use id="east-normal-top" xlink:href="#normal-top"/>
+  <use id="east-normal-topright" xlink:href="#normal-topright"/>
+  <use id="east-normal-left" xlink:href="#normal-left"/>
+  <use id="east-normal-center" xlink:href="#normal-center"/>
+  <use id="east-normal-right" xlink:href="#normal-right"/>
+  <use id="east-normal-bottomleft" xlink:href="#normal-bottomleft"/>
+  <use id="east-normal-bottom" xlink:href="#normal-bottom"/>
+  <use id="east-normal-bottomright" xlink:href="#normal-bottomright"/>
+  <use id="west-normal-topleft" xlink:href="#normal-topleft"/>
+  <use id="west-normal-top" xlink:href="#normal-top"/>
+  <use id="west-normal-topright" xlink:href="#normal-topright"/>
+  <use id="west-normal-left" xlink:href="#normal-left"/>
+  <use id="west-normal-center" xlink:href="#normal-center"/>
+  <use id="west-normal-right" xlink:href="#normal-right"/>
+  <use id="west-normal-bottomleft" xlink:href="#normal-bottomleft"/>
+  <use id="west-normal-bottom" xlink:href="#normal-bottom"/>
+  <use id="west-normal-bottomright" xlink:href="#normal-bottomright"/>
+  <use id="hover-topleft" xlink:href="#hover" x="0" y="0"/>
+  <use id="hover-top" xlink:href="#hover" x="0" y="0"/>
+  <use id="hover-topright" xlink:href="#hover" x="0" y="0"/>
+  <use id="hover-left" xlink:href="#hover" x="0" y="0"/>
+  <use id="hover-center" xlink:href="#hover" x="0" y="0"/>
+  <use id="hover-right" xlink:href="#hover" x="0" y="0"/>
+  <use id="hover-bottomleft" xlink:href="#hover" x="0" y="0"/>
+  <use id="hover-bottom" xlink:href="#hover" x="0" y="0"/>
+  <use id="hover-bottomright" xlink:href="#hover" x="0" y="0"/>
+  <use id="north-hover-topleft" xlink:href="#hover-topleft"/>
+  <use id="north-hover-top" xlink:href="#hover-top"/>
+  <use id="north-hover-topright" xlink:href="#hover-topright"/>
+  <use id="north-hover-left" xlink:href="#hover-left"/>
+  <use id="north-hover-center" xlink:href="#hover-center"/>
+  <use id="north-hover-right" xlink:href="#hover-right"/>
+  <use id="north-hover-bottomleft" xlink:href="#hover-bottomleft"/>
+  <use id="north-hover-bottom" xlink:href="#hover-bottom"/>
+  <use id="north-hover-bottomright" xlink:href="#hover-bottomright"/>
+  <use id="east-hover-topleft" xlink:href="#hover-topleft"/>
+  <use id="east-hover-top" xlink:href="#hover-top"/>
+  <use id="east-hover-topright" xlink:href="#hover-topright"/>
+  <use id="east-hover-left" xlink:href="#hover-left"/>
+  <use id="east-hover-center" xlink:href="#hover-center"/>
+  <use id="east-hover-right" xlink:href="#hover-right"/>
+  <use id="east-hover-bottomleft" xlink:href="#hover-bottomleft"/>
+  <use id="east-hover-bottom" xlink:href="#hover-bottom"/>
+  <use id="east-hover-bottomright" xlink:href="#hover-bottomright"/>
+  <use id="west-hover-topleft" xlink:href="#hover-topleft"/>
+  <use id="west-hover-top" xlink:href="#hover-top"/>
+  <use id="west-hover-topright" xlink:href="#hover-topright"/>
+  <use id="west-hover-left" xlink:href="#hover-left"/>
+  <use id="west-hover-center" xlink:href="#hover-center"/>
+  <use id="west-hover-right" xlink:href="#hover-right"/>
+  <use id="west-hover-bottomleft" xlink:href="#hover-bottomleft"/>
+  <use id="west-hover-bottom" xlink:href="#hover-bottom"/>
+  <use id="west-hover-bottomright" xlink:href="#hover-bottomright"/>
+  <use id="focus-topleft" xlink:href="#focus" x="0" y="0"/>
+  <use id="focus-top" xlink:href="#focus" x="0" y="0"/>
+  <use id="focus-topright" xlink:href="#focus" x="0" y="0"/>
+  <use id="focus-left" xlink:href="#focus" x="0" y="0"/>
+  <use id="focus-center" xlink:href="#focus" x="0" y="0"/>
+  <use id="focus-right" xlink:href="#focus" x="0" y="0"/>
+  <use id="focus-bottomleft" xlink:href="#focus" x="0" y="0"/>
+  <use id="focus-bottom" xlink:href="#focus" x="0" y="0"/>
+  <use id="focus-bottomright" xlink:href="#focus" x="0" y="0"/>
+  <use id="north-focus-topleft" xlink:href="#focus-topleft"/>
+  <use id="north-focus-top" xlink:href="#focus-top"/>
+  <use id="north-focus-topright" xlink:href="#focus-topright"/>
+  <use id="north-focus-left" xlink:href="#focus-left"/>
+  <use id="north-focus-center" xlink:href="#focus-center"/>
+  <use id="north-focus-right" xlink:href="#focus-right"/>
+  <use id="north-focus-bottomleft" xlink:href="#focus-bottomleft"/>
+  <use id="north-focus-bottom" xlink:href="#focus-bottom"/>
+  <use id="north-focus-bottomright" xlink:href="#focus-bottomright"/>
+  <use id="east-focus-topleft" xlink:href="#focus-topleft"/>
+  <use id="east-focus-top" xlink:href="#focus-top"/>
+  <use id="east-focus-topright" xlink:href="#focus-topright"/>
+  <use id="east-focus-left" xlink:href="#focus-left"/>
+  <use id="east-focus-center" xlink:href="#focus-center"/>
+  <use id="east-focus-right" xlink:href="#focus-right"/>
+  <use id="east-focus-bottomleft" xlink:href="#focus-bottomleft"/>
+  <use id="east-focus-bottom" xlink:href="#focus-bottom"/>
+  <use id="east-focus-bottomright" xlink:href="#focus-bottomright"/>
+  <use id="west-focus-topleft" xlink:href="#focus-topleft"/>
+  <use id="west-focus-top" xlink:href="#focus-top"/>
+  <use id="west-focus-topright" xlink:href="#focus-topright"/>
+  <use id="west-focus-left" xlink:href="#focus-left"/>
+  <use id="west-focus-center" xlink:href="#focus-center"/>
+  <use id="west-focus-right" xlink:href="#focus-right"/>
+  <use id="west-focus-bottomleft" xlink:href="#focus-bottomleft"/>
+  <use id="west-focus-bottom" xlink:href="#focus-bottom"/>
+  <use id="west-focus-bottomright" xlink:href="#focus-bottomright"/>
+  <use id="attention-topleft" xlink:href="#attention" x="0" y="0"/>
+  <use id="attention-top" xlink:href="#attention" x="0" y="0"/>
+  <use id="attention-topright" xlink:href="#attention" x="0" y="0"/>
+  <use id="attention-left" xlink:href="#attention" x="0" y="0"/>
+  <use id="attention-center" xlink:href="#attention" x="0" y="0"/>
+  <use id="attention-right" xlink:href="#attention" x="0" y="0"/>
+  <use id="attention-bottomleft" xlink:href="#attention" x="0" y="0"/>
+  <use id="attention-bottom" xlink:href="#attention" x="0" y="0"/>
+  <use id="attention-bottomright" xlink:href="#attention" x="0" y="0"/>
+  <use id="north-attention-topleft" xlink:href="#attention-topleft"/>
+  <use id="north-attention-top" xlink:href="#attention-top"/>
+  <use id="north-attention-topright" xlink:href="#attention-topright"/>
+  <use id="north-attention-left" xlink:href="#attention-left"/>
+  <use id="north-attention-center" xlink:href="#attention-center"/>
+  <use id="north-attention-right" xlink:href="#attention-right"/>
+  <use id="north-attention-bottomleft" xlink:href="#attention-bottomleft"/>
+  <use id="north-attention-bottom" xlink:href="#attention-bottom"/>
+  <use id="north-attention-bottomright" xlink:href="#attention-bottomright"/>
+  <use id="east-attention-topleft" xlink:href="#attention-topleft"/>
+  <use id="east-attention-top" xlink:href="#attention-top"/>
+  <use id="east-attention-topright" xlink:href="#attention-topright"/>
+  <use id="east-attention-left" xlink:href="#attention-left"/>
+  <use id="east-attention-center" xlink:href="#attention-center"/>
+  <use id="east-attention-right" xlink:href="#attention-right"/>
+  <use id="east-attention-bottomleft" xlink:href="#attention-bottomleft"/>
+  <use id="east-attention-bottom" xlink:href="#attention-bottom"/>
+  <use id="east-attention-bottomright" xlink:href="#attention-bottomright"/>
+  <use id="west-attention-topleft" xlink:href="#attention-topleft"/>
+  <use id="west-attention-top" xlink:href="#attention-top"/>
+  <use id="west-attention-topright" xlink:href="#attention-topright"/>
+  <use id="west-attention-left" xlink:href="#attention-left"/>
+  <use id="west-attention-center" xlink:href="#attention-center"/>
+  <use id="west-attention-right" xlink:href="#attention-right"/>
+  <use id="west-attention-bottomleft" xlink:href="#attention-bottomleft"/>
+  <use id="west-attention-bottom" xlink:href="#attention-bottom"/>
+  <use id="west-attention-bottomright" xlink:href="#attention-bottomright"/>
+  <use id="minimized-topleft" xlink:href="#minimized" x="0" y="0"/>
+  <use id="minimized-top" xlink:href="#minimized" x="0" y="0"/>
+  <use id="minimized-topright" xlink:href="#minimized" x="0" y="0"/>
+  <use id="minimized-left" xlink:href="#minimized" x="0" y="0"/>
+  <use id="minimized-center" xlink:href="#minimized" x="0" y="0"/>
+  <use id="minimized-right" xlink:href="#minimized" x="0" y="0"/>
+  <use id="minimized-bottomleft" xlink:href="#minimized" x="0" y="0"/>
+  <use id="minimized-bottom" xlink:href="#minimized" x="0" y="0"/>
+  <use id="minimized-bottomright" xlink:href="#minimized" x="0" y="0"/>
+  <use id="north-minimized-topleft" xlink:href="#minimized-topleft"/>
+  <use id="north-minimized-top" xlink:href="#minimized-top"/>
+  <use id="north-minimized-topright" xlink:href="#minimized-topright"/>
+  <use id="north-minimized-left" xlink:href="#minimized-left"/>
+  <use id="north-minimized-center" xlink:href="#minimized-center"/>
+  <use id="north-minimized-right" xlink:href="#minimized-right"/>
+  <use id="north-minimized-bottomleft" xlink:href="#minimized-bottomleft"/>
+  <use id="north-minimized-bottom" xlink:href="#minimized-bottom"/>
+  <use id="north-minimized-bottomright" xlink:href="#minimized-bottomright"/>
+  <use id="east-minimized-topleft" xlink:href="#minimized-topleft"/>
+  <use id="east-minimized-top" xlink:href="#minimized-top"/>
+  <use id="east-minimized-topright" xlink:href="#minimized-topright"/>
+  <use id="east-minimized-left" xlink:href="#minimized-left"/>
+  <use id="east-minimized-center" xlink:href="#minimized-center"/>
+  <use id="east-minimized-right" xlink:href="#minimized-right"/>
+  <use id="east-minimized-bottomleft" xlink:href="#minimized-bottomleft"/>
+  <use id="east-minimized-bottom" xlink:href="#minimized-bottom"/>
+  <use id="east-minimized-bottomright" xlink:href="#minimized-bottomright"/>
+  <use id="west-minimized-topleft" xlink:href="#minimized-topleft"/>
+  <use id="west-minimized-top" xlink:href="#minimized-top"/>
+  <use id="west-minimized-topright" xlink:href="#minimized-topright"/>
+  <use id="west-minimized-left" xlink:href="#minimized-left"/>
+  <use id="west-minimized-center" xlink:href="#minimized-center"/>
+  <use id="west-minimized-right" xlink:href="#minimized-right"/>
+  <use id="west-minimized-bottomleft" xlink:href="#minimized-bottomleft"/>
+  <use id="west-minimized-bottom" xlink:href="#minimized-bottom"/>
+  <use id="west-minimized-bottomright" xlink:href="#minimized-bottomright"/>
+  <use id="progress-topleft" xlink:href="#progress" x="0" y="0"/>
+  <use id="progress-top" xlink:href="#progress" x="0" y="0"/>
+  <use id="progress-topright" xlink:href="#progress" x="0" y="0"/>
+  <use id="progress-left" xlink:href="#progress" x="0" y="0"/>
+  <use id="progress-center" xlink:href="#progress" x="0" y="0"/>
+  <use id="progress-right" xlink:href="#progress" x="0" y="0"/>
+  <use id="progress-bottomleft" xlink:href="#progress" x="0" y="0"/>
+  <use id="progress-bottom" xlink:href="#progress" x="0" y="0"/>
+  <use id="progress-bottomright" xlink:href="#progress" x="0" y="0"/>
+  <use id="north-progress-topleft" xlink:href="#progress-topleft"/>
+  <use id="north-progress-top" xlink:href="#progress-top"/>
+  <use id="north-progress-topright" xlink:href="#progress-topright"/>
+  <use id="north-progress-left" xlink:href="#progress-left"/>
+  <use id="north-progress-center" xlink:href="#progress-center"/>
+  <use id="north-progress-right" xlink:href="#progress-right"/>
+  <use id="north-progress-bottomleft" xlink:href="#progress-bottomleft"/>
+  <use id="north-progress-bottom" xlink:href="#progress-bottom"/>
+  <use id="north-progress-bottomright" xlink:href="#progress-bottomright"/>
+  <use id="east-progress-topleft" xlink:href="#progress-topleft"/>
+  <use id="east-progress-top" xlink:href="#progress-top"/>
+  <use id="east-progress-topright" xlink:href="#progress-topright"/>
+  <use id="east-progress-left" xlink:href="#progress-left"/>
+  <use id="east-progress-center" xlink:href="#progress-center"/>
+  <use id="east-progress-right" xlink:href="#progress-right"/>
+  <use id="east-progress-bottomleft" xlink:href="#progress-bottomleft"/>
+  <use id="east-progress-bottom" xlink:href="#progress-bottom"/>
+  <use id="east-progress-bottomright" xlink:href="#progress-bottomright"/>
+  <use id="west-progress-topleft" xlink:href="#progress-topleft"/>
+  <use id="west-progress-top" xlink:href="#progress-top"/>
+  <use id="west-progress-topright" xlink:href="#progress-topright"/>
+  <use id="west-progress-left" xlink:href="#progress-left"/>
+  <use id="west-progress-center" xlink:href="#progress-center"/>
+  <use id="west-progress-right" xlink:href="#progress-right"/>
+  <use id="west-progress-bottomleft" xlink:href="#progress-bottomleft"/>
+  <use id="west-progress-bottom" xlink:href="#progress-bottom"/>
+  <use id="west-progress-bottomright" xlink:href="#progress-bottomright"/>
+
+</svg>
