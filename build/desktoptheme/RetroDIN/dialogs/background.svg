@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <pattern id="wellscan" width="1" height="3" patternUnits="userSpaceOnUse">
+      <rect width="1" height="3" fill="#001210"/>
+      <rect width="1" height="1" fill="#000000" opacity="0.25"/>
+    </pattern>
+  </defs>
+  <rect id="hint-top-margin" x="0" y="0" width="1" height="8"/>
+  <rect id="hint-bottom-margin" x="0" y="40" width="1" height="8"/>
+  <rect id="hint-left-margin" x="0" y="0" width="8" height="1"/>
+  <rect id="hint-right-margin" x="40" y="0" width="8" height="1"/>
+  <rect id="hint-tile-center" x="0" y="0" width="1" height="1"/>
+
+  <rect id="topleft" x="0" y="0" width="8" height="8" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="topright" x="40" y="0" width="8" height="8" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="bottomleft" x="0" y="40" width="8" height="8" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="bottomright" x="40" y="40" width="8" height="8" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="top" x="8" y="0" width="32" height="8" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="bottom" x="8" y="40" width="32" height="8" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="left" x="0" y="8" width="8" height="32" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="right" x="40" y="8" width="8" height="32" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="center" x="8" y="8" width="32" height="32" fill="url(#wellscan)"/>
+</svg>
