@@ -1230,12 +1230,12 @@ Confirmed real template and `stage` property contract against the installed syst
 # scripts/prepare_splash_gif.sh
 set -euo pipefail
 mkdir -p build/lookandfeel/com.retrodin.theme/contents/splash/images
-ffmpeg -y -i ~/Downloads/movie2_glow.gif -vf "fps=12,scale=512:-1" -t 3 \
+ffmpeg -y -i ~/Downloads/movie2_glow.gif -vf "fps=10,scale=384:-1" -t 2.5 \
     build/lookandfeel/com.retrodin.theme/contents/splash/images/noise.gif
 ```
 
 Run: `chmod +x scripts/prepare_splash_gif.sh && ./scripts/prepare_splash_gif.sh`
-Expected: `noise.gif` created, size well under 1MB.
+Expected: `noise.gif` created, ~400KB (first pass at fps=12/scale=512 produced ~1MB — tightened to fps=10/scale=384/2.5s to hit the "few hundred KB" target).
 
 Run: `ls -la build/lookandfeel/com.retrodin.theme/contents/splash/images/noise.gif`
 Expected: file exists, size < 1000000 bytes. If `ffmpeg` isn't installed, install it first (`apt install ffmpeg` or equivalent) — this is the one new dependency in the whole plan, and it's a build-time tool, not something the shipped theme depends on at runtime.
