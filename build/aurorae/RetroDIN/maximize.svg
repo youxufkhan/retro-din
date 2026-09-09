@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="active-center">
+    <rect width="20" height="20" rx="3" fill="#1a1e1f" stroke="#050606"/>
+    <rect x="5" y="5" width="10" height="10" fill="none" stroke="#14b8a6" stroke-width="1.5"/>
+  </g>
+  <g id="inactive-center">
+    <rect width="20" height="20" rx="3" fill="#1a1e1f" opacity="0.6" stroke="#050606"/>
+    <rect x="5" y="5" width="10" height="10" fill="none" stroke="#0d6b60" stroke-width="1.5"/>
+  </g>
+  <g id="deactivated-center">
+    <rect width="20" height="20" rx="3" fill="#1a1e1f" opacity="0.4"/>
+    <rect x="5" y="5" width="10" height="10" fill="none" stroke="#4a5254" stroke-width="1.5"/>
+  </g>
+  <g id="hover-center">
+    <rect width="20" height="20" rx="3" fill="#1a1e1f" stroke="#ffb454" stroke-width="1.5"/>
+    <rect x="5" y="5" width="10" height="10" fill="none" stroke="#ffd08a" stroke-width="1.5"/>
+  </g>
+  <g id="pressed-center">
+    <rect width="20" height="20" rx="3" fill="#0f1213" stroke="#ffb454" stroke-width="1.5"/>
+    <rect x="5" y="5" width="10" height="10" fill="none" stroke="#ffd08a" stroke-width="1.5"/>
+  </g>
+</svg>
