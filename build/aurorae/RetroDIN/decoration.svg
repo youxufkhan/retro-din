@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="40" viewBox="0 0 64 40">
+  <defs>
+    <linearGradient id="tbgrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34393b"/>
+      <stop offset="1" stop-color="#16191a"/>
+    </linearGradient>
+    <pattern id="tbscratch" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="url(#tbgrad)"/>
+      <line x1="0" y1="4" x2="16" y2="0" stroke="#ffffff" stroke-opacity="0.03"/>
+      <line x1="0" y1="12" x2="16" y2="8" stroke="#000000" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect id="hint-top-margin" x="0" y="0" width="1" height="4"/>
+  <rect id="hint-left-margin" x="0" y="0" width="4" height="1"/>
+  <rect id="hint-right-margin" x="60" y="0" width="4" height="1"/>
+  <rect id="hint-bottom-margin" x="0" y="36" width="1" height="4"/>
+
+  <!-- active: teal glow ring -->
+  <rect id="decoration-topleft" x="0" y="0" width="4" height="4" fill="url(#tbscratch)" stroke="#14b8a6" stroke-width="1"/>
+  <rect id="decoration-topright" x="60" y="0" width="4" height="4" fill="url(#tbscratch)" stroke="#14b8a6" stroke-width="1"/>
+  <rect id="decoration-bottomleft" x="0" y="36" width="4" height="4" fill="url(#tbscratch)"/>
+  <rect id="decoration-bottomright" x="60" y="36" width="4" height="4" fill="url(#tbscratch)"/>
+  <rect id="decoration-top" x="4" y="0" width="56" height="4" fill="url(#tbscratch)" stroke="#14b8a6" stroke-width="1"/>
+  <rect id="decoration-bottom" x="4" y="36" width="56" height="4" fill="url(#tbscratch)"/>
+  <rect id="decoration-left" x="0" y="4" width="4" height="32" fill="url(#tbscratch)" stroke="#14b8a6" stroke-width="1"/>
+  <rect id="decoration-right" x="60" y="4" width="4" height="32" fill="url(#tbscratch)" stroke="#14b8a6" stroke-width="1"/>
+  <rect id="decoration-center" x="4" y="4" width="56" height="32" fill="url(#tbscratch)"/>
+
+  <!-- inactive: desaturated, no glow -->
+  <rect id="decoration-inactive-topleft" x="0" y="0" width="4" height="4" fill="url(#tbscratch)" opacity="0.7"/>
+  <rect id="decoration-inactive-topright" x="60" y="0" width="4" height="4" fill="url(#tbscratch)" opacity="0.7"/>
+  <rect id="decoration-inactive-bottomleft" x="0" y="36" width="4" height="4" fill="url(#tbscratch)" opacity="0.7"/>
+  <rect id="decoration-inactive-bottomright" x="60" y="36" width="4" height="4" fill="url(#tbscratch)" opacity="0.7"/>
+  <rect id="decoration-inactive-top" x="4" y="0" width="56" height="4" fill="url(#tbscratch)" opacity="0.7"/>
+  <rect id="decoration-inactive-bottom" x="4" y="36" width="56" height="4" fill="url(#tbscratch)" opacity="0.7"/>
+  <rect id="decoration-inactive-left" x="0" y="4" width="4" height="32" fill="url(#tbscratch)" opacity="0.7"/>
+  <rect id="decoration-inactive-right" x="60" y="4" width="4" height="32" fill="url(#tbscratch)" opacity="0.7"/>
+  <rect id="decoration-inactive-center" x="4" y="4" width="56" height="32" fill="url(#tbscratch)" opacity="0.7"/>
+</svg>
