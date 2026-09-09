@@ -1,0 +1,15 @@
+[kdeglobals][General]
+ColorScheme=RetroDIN
+
+[kdeglobals][KDE]
+widgetStyle=Breeze
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__RetroDIN
+
+[plasmarc][Theme]
+name=RetroDIN
+
+[Wallpaper]
+Image=RetroDIN-lockwall
