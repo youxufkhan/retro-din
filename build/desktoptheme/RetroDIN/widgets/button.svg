@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <radialGradient id="knobgrad" cx="35%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#454b4d"/>
+      <stop offset="1" stop-color="#181c1d"/>
+    </radialGradient>
+  </defs>
+  <g id="normal">
+    <circle cx="26" cy="26" r="24" fill="url(#knobgrad)" stroke="#050606" stroke-width="2"/>
+    <circle cx="26" cy="26" r="26" fill="none" stroke="#0d6b60" stroke-width="3"/>
+    <rect x="25" y="6" width="2" height="12" fill="#5eead4"/>
+  </g>
+  <g id="hover">
+    <circle cx="26" cy="26" r="24" fill="url(#knobgrad)" stroke="#050606" stroke-width="2"/>
+    <circle cx="26" cy="26" r="26" fill="none" stroke="#14b8a6" stroke-width="3"/>
+    <rect x="25" y="6" width="2" height="12" fill="#5eead4"/>
+  </g>
+  <g id="pressed">
+    <circle cx="26" cy="26" r="23" fill="url(#knobgrad)" stroke="#050606" stroke-width="2"/>
+    <circle cx="26" cy="26" r="26" fill="none" stroke="#ffb454" stroke-width="3"/>
+    <rect x="25" y="7" width="2" height="12" fill="#ffd08a"/>
+  </g>
+</svg>
