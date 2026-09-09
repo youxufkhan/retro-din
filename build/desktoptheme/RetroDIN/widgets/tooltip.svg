@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="hint-top-margin" x="0" y="0" width="1" height="6"/>
+  <rect id="hint-bottom-margin" x="0" y="26" width="1" height="6"/>
+  <rect id="hint-left-margin" x="0" y="0" width="6" height="1"/>
+  <rect id="hint-right-margin" x="26" y="0" width="6" height="1"/>
+  <rect id="hint-tile-center" x="0" y="0" width="1" height="1"/>
+  <rect id="topleft" x="0" y="0" width="6" height="6" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="topright" x="26" y="0" width="6" height="6" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="bottomleft" x="0" y="26" width="6" height="6" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="bottomright" x="26" y="26" width="6" height="6" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="top" x="6" y="0" width="20" height="6" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="bottom" x="6" y="26" width="20" height="6" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="left" x="0" y="6" width="6" height="20" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="right" x="26" y="6" width="6" height="20" fill="#001210" stroke="#0a2e29" stroke-width="1"/>
+  <rect id="center" x="6" y="6" width="20" height="20" fill="#001210"/>
+</svg>

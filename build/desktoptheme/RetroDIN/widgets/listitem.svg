@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <g id="normal">
+    <rect width="32" height="32" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="hover">
+    <rect width="32" height="32" fill="#3a2f1c"/>
+    <rect width="32" height="32" fill="none" stroke="#5a4526" stroke-width="1"/>
+  </g>
+  <g id="pressed">
+    <rect width="32" height="32" fill="#241d12"/>
+  </g>
+  <g id="section">
+    <rect width="32" height="32" fill="#001210" fill-opacity="0"/>
+  </g>
+  <line id="separator" x1="2" y1="16" x2="30" y2="16" stroke="#0d6b60" stroke-opacity="0.5" stroke-width="1"/>
+  <use id="normal-topleft" xlink:href="#normal"/>
+  <use id="normal-top" xlink:href="#normal"/>
+  <use id="normal-topright" xlink:href="#normal"/>
+  <use id="normal-left" xlink:href="#normal"/>
+  <use id="normal-center" xlink:href="#normal"/>
+  <use id="normal-right" xlink:href="#normal"/>
+  <use id="normal-bottomleft" xlink:href="#normal"/>
+  <use id="normal-bottom" xlink:href="#normal"/>
+  <use id="normal-bottomright" xlink:href="#normal"/>
+  <rect id="normal-hint-top-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="normal-hint-bottom-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="normal-hint-left-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="normal-hint-right-margin" x="0" y="0" width="1" height="1"/>
+  <use id="hover-topleft" xlink:href="#hover"/>
+  <use id="hover-top" xlink:href="#hover"/>
+  <use id="hover-topright" xlink:href="#hover"/>
+  <use id="hover-left" xlink:href="#hover"/>
+  <use id="hover-center" xlink:href="#hover"/>
+  <use id="hover-right" xlink:href="#hover"/>
+  <use id="hover-bottomleft" xlink:href="#hover"/>
+  <use id="hover-bottom" xlink:href="#hover"/>
+  <use id="hover-bottomright" xlink:href="#hover"/>
+  <rect id="hover-hint-top-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="hover-hint-bottom-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="hover-hint-left-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="hover-hint-right-margin" x="0" y="0" width="1" height="1"/>
+  <use id="pressed-topleft" xlink:href="#pressed"/>
+  <use id="pressed-top" xlink:href="#pressed"/>
+  <use id="pressed-topright" xlink:href="#pressed"/>
+  <use id="pressed-left" xlink:href="#pressed"/>
+  <use id="pressed-center" xlink:href="#pressed"/>
+  <use id="pressed-right" xlink:href="#pressed"/>
+  <use id="pressed-bottomleft" xlink:href="#pressed"/>
+  <use id="pressed-bottom" xlink:href="#pressed"/>
+  <use id="pressed-bottomright" xlink:href="#pressed"/>
+  <rect id="pressed-hint-top-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="pressed-hint-bottom-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="pressed-hint-left-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="pressed-hint-right-margin" x="0" y="0" width="1" height="1"/>
+  <use id="section-topleft" xlink:href="#section"/>
+  <use id="section-top" xlink:href="#section"/>
+  <use id="section-topright" xlink:href="#section"/>
+  <use id="section-left" xlink:href="#section"/>
+  <use id="section-center" xlink:href="#section"/>
+  <use id="section-right" xlink:href="#section"/>
+  <use id="section-bottomleft" xlink:href="#section"/>
+  <use id="section-bottom" xlink:href="#section"/>
+  <use id="section-bottomright" xlink:href="#section"/>
+  <rect id="section-hint-top-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="section-hint-bottom-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="section-hint-left-margin" x="0" y="0" width="1" height="1"/>
+  <rect id="section-hint-right-margin" x="0" y="0" width="1" height="1"/>
+</svg>
