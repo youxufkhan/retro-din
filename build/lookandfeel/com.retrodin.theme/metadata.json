@@ -1,0 +1,14 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Id": "com.retrodin.theme",
+        "Name": "Retro DIN",
+        "Description": "90s car-stereo/hi-fi DIN unit global theme",
+        "Category": "Global Themes (Plasma 6)",
+        "ServiceTypes": ["Plasma/LookAndFeel"],
+        "EnabledByDefault": true,
+        "License": "GPL-3.0"
+    },
+    "X-Plasma-MainScript": "defaults",
+    "X-Plasma-APIVersion": "2"
+}

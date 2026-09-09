@@ -1,0 +1,11 @@
+{
+    "KPlugin": {
+        "Id": "RetroDIN",
+        "Name": "Retro DIN",
+        "Description": "90s car-stereo/hi-fi DIN unit aesthetic Plasma Style",
+        "Version": "1.0",
+        "License": "GPL-3.0",
+        "EnabledByDefault": true
+    },
+    "X-Plasma-API": "5.0"
+}
