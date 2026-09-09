@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="48" viewBox="0 0 64 48">
   <defs>
-    <linearGradient id="btngrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#2c3133"/>
-      <stop offset="1" stop-color="#1a1e1f"/>
+    <linearGradient id="btngrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="48">
+      <stop offset="0" stop-color="#333a3c"/>
+      <stop offset="1" stop-color="#191d1e"/>
     </linearGradient>
   </defs>
-
-  <!-- shared 9-slice geometry per state, each state owns one <g id="STATE"> -->
-  <g id="normal">
-    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
-          stroke="#050606" stroke-width="1"/>
+  <g id="normal-topleft">
+    <rect x="0" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="8" height="1" fill="#1d6b60" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="8" fill="#1d6b60" fill-opacity="1"/>
   </g>
-  <g id="hover">
-    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
-          stroke="#0d6b60" stroke-width="1.5"/>
+  <g id="normal-top">
+    <rect x="8" y="0" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="0" width="48" height="1" fill="#1d6b60" fill-opacity="1"/>
   </g>
-  <g id="focus">
-    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
-          stroke="#ffb454" stroke-width="2"/>
-    <rect x="1" y="1" width="62" height="46" rx="3" fill="none"
-          stroke="#ffb454" stroke-opacity="0.5" stroke-width="4"/>
+  <g id="normal-topright">
+    <rect x="56" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="0" width="8" height="1" fill="#1d6b60" fill-opacity="1"/>
+    <rect x="63" y="0" width="1" height="8" fill="#1d6b60" fill-opacity="1"/>
   </g>
-  <g id="attention">
-    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
-          stroke="#ffd08a" stroke-width="2">
-      <animate attributeName="stroke-opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/>
-    </rect>
+  <g id="normal-left">
+    <rect x="0" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="8" width="1" height="32" fill="#1d6b60" fill-opacity="1"/>
   </g>
-  <g id="minimized">
-    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
-          fill-opacity="0.5" stroke="#050606" stroke-width="1"/>
+  <g id="normal-center">
+    <rect x="8" y="8" width="48" height="32" fill="url(#btngrad)" fill-opacity="1"/>
   </g>
-  <g id="progress">
-    <rect x="0" y="0" width="64" height="48" rx="4" fill="url(#btngrad)"
-          stroke="#14b8a6" stroke-width="1.5"/>
+  <g id="normal-right">
+    <rect x="56" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="63" y="8" width="1" height="32" fill="#1d6b60" fill-opacity="1"/>
   </g>
-  <use id="normal-topleft" xlink:href="#normal" x="0" y="0"/>
-  <use id="normal-top" xlink:href="#normal" x="0" y="0"/>
-  <use id="normal-topright" xlink:href="#normal" x="0" y="0"/>
-  <use id="normal-left" xlink:href="#normal" x="0" y="0"/>
-  <use id="normal-center" xlink:href="#normal" x="0" y="0"/>
-  <use id="normal-right" xlink:href="#normal" x="0" y="0"/>
-  <use id="normal-bottomleft" xlink:href="#normal" x="0" y="0"/>
-  <use id="normal-bottom" xlink:href="#normal" x="0" y="0"/>
-  <use id="normal-bottomright" xlink:href="#normal" x="0" y="0"/>
+  <g id="normal-bottomleft">
+    <rect x="0" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="47" width="8" height="1" fill="#1d6b60" fill-opacity="1"/>
+    <rect x="0" y="40" width="1" height="8" fill="#1d6b60" fill-opacity="1"/>
+  </g>
+  <g id="normal-bottom">
+    <rect x="8" y="40" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="47" width="48" height="1" fill="#1d6b60" fill-opacity="1"/>
+  </g>
+  <g id="normal-bottomright">
+    <rect x="56" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="47" width="8" height="1" fill="#1d6b60" fill-opacity="1"/>
+    <rect x="63" y="40" width="1" height="8" fill="#1d6b60" fill-opacity="1"/>
+  </g>
   <use id="north-normal-topleft" xlink:href="#normal-topleft"/>
   <use id="north-normal-top" xlink:href="#normal-top"/>
   <use id="north-normal-topright" xlink:href="#normal-topright"/>
@@ -72,15 +72,45 @@
   <use id="west-normal-bottomleft" xlink:href="#normal-bottomleft"/>
   <use id="west-normal-bottom" xlink:href="#normal-bottom"/>
   <use id="west-normal-bottomright" xlink:href="#normal-bottomright"/>
-  <use id="hover-topleft" xlink:href="#hover" x="0" y="0"/>
-  <use id="hover-top" xlink:href="#hover" x="0" y="0"/>
-  <use id="hover-topright" xlink:href="#hover" x="0" y="0"/>
-  <use id="hover-left" xlink:href="#hover" x="0" y="0"/>
-  <use id="hover-center" xlink:href="#hover" x="0" y="0"/>
-  <use id="hover-right" xlink:href="#hover" x="0" y="0"/>
-  <use id="hover-bottomleft" xlink:href="#hover" x="0" y="0"/>
-  <use id="hover-bottom" xlink:href="#hover" x="0" y="0"/>
-  <use id="hover-bottomright" xlink:href="#hover" x="0" y="0"/>
+  <g id="hover-topleft">
+    <rect x="0" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="8" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+    <rect x="0" y="0" width="1.5" height="8" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="hover-top">
+    <rect x="8" y="0" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="0" width="48" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="hover-topright">
+    <rect x="56" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="0" width="8" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+    <rect x="62.5" y="0" width="1.5" height="8" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="hover-left">
+    <rect x="0" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="8" width="1.5" height="32" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="hover-center">
+    <rect x="8" y="8" width="48" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+  </g>
+  <g id="hover-right">
+    <rect x="56" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="62.5" y="8" width="1.5" height="32" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="hover-bottomleft">
+    <rect x="0" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="46.5" width="8" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+    <rect x="0" y="40" width="1.5" height="8" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="hover-bottom">
+    <rect x="8" y="40" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="46.5" width="48" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="hover-bottomright">
+    <rect x="56" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="46.5" width="8" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+    <rect x="62.5" y="40" width="1.5" height="8" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
   <use id="north-hover-topleft" xlink:href="#hover-topleft"/>
   <use id="north-hover-top" xlink:href="#hover-top"/>
   <use id="north-hover-topright" xlink:href="#hover-topright"/>
@@ -108,15 +138,57 @@
   <use id="west-hover-bottomleft" xlink:href="#hover-bottomleft"/>
   <use id="west-hover-bottom" xlink:href="#hover-bottom"/>
   <use id="west-hover-bottomright" xlink:href="#hover-bottomright"/>
-  <use id="focus-topleft" xlink:href="#focus" x="0" y="0"/>
-  <use id="focus-top" xlink:href="#focus" x="0" y="0"/>
-  <use id="focus-topright" xlink:href="#focus" x="0" y="0"/>
-  <use id="focus-left" xlink:href="#focus" x="0" y="0"/>
-  <use id="focus-center" xlink:href="#focus" x="0" y="0"/>
-  <use id="focus-right" xlink:href="#focus" x="0" y="0"/>
-  <use id="focus-bottomleft" xlink:href="#focus" x="0" y="0"/>
-  <use id="focus-bottom" xlink:href="#focus" x="0" y="0"/>
-  <use id="focus-bottomright" xlink:href="#focus" x="0" y="0"/>
+  <g id="focus-topleft">
+    <rect x="0" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="8" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="0" width="2" height="8" fill="#ffb454" fill-opacity="1"/>
+    <rect x="2" y="2" width="6" height="1" fill="#ffb454" fill-opacity="0.35"/>
+    <rect x="2" y="2" width="1" height="6" fill="#ffb454" fill-opacity="0.35"/>
+  </g>
+  <g id="focus-top">
+    <rect x="8" y="0" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="0" width="48" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="8" y="2" width="48" height="1" fill="#ffb454" fill-opacity="0.35"/>
+  </g>
+  <g id="focus-topright">
+    <rect x="56" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="0" width="8" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="62" y="0" width="2" height="8" fill="#ffb454" fill-opacity="1"/>
+    <rect x="56" y="2" width="6" height="1" fill="#ffb454" fill-opacity="0.35"/>
+    <rect x="61" y="2" width="1" height="6" fill="#ffb454" fill-opacity="0.35"/>
+  </g>
+  <g id="focus-left">
+    <rect x="0" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="8" width="2" height="32" fill="#ffb454" fill-opacity="1"/>
+    <rect x="2" y="8" width="1" height="32" fill="#ffb454" fill-opacity="0.35"/>
+  </g>
+  <g id="focus-center">
+    <rect x="8" y="8" width="48" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+  </g>
+  <g id="focus-right">
+    <rect x="56" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="62" y="8" width="2" height="32" fill="#ffb454" fill-opacity="1"/>
+    <rect x="61" y="8" width="1" height="32" fill="#ffb454" fill-opacity="0.35"/>
+  </g>
+  <g id="focus-bottomleft">
+    <rect x="0" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="46" width="8" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="40" width="2" height="8" fill="#ffb454" fill-opacity="1"/>
+    <rect x="2" y="45" width="6" height="1" fill="#ffb454" fill-opacity="0.35"/>
+    <rect x="2" y="40" width="1" height="6" fill="#ffb454" fill-opacity="0.35"/>
+  </g>
+  <g id="focus-bottom">
+    <rect x="8" y="40" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="46" width="48" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="8" y="45" width="48" height="1" fill="#ffb454" fill-opacity="0.35"/>
+  </g>
+  <g id="focus-bottomright">
+    <rect x="56" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="46" width="8" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="62" y="40" width="2" height="8" fill="#ffb454" fill-opacity="1"/>
+    <rect x="56" y="45" width="6" height="1" fill="#ffb454" fill-opacity="0.35"/>
+    <rect x="61" y="40" width="1" height="6" fill="#ffb454" fill-opacity="0.35"/>
+  </g>
   <use id="north-focus-topleft" xlink:href="#focus-topleft"/>
   <use id="north-focus-top" xlink:href="#focus-top"/>
   <use id="north-focus-topright" xlink:href="#focus-topright"/>
@@ -144,15 +216,69 @@
   <use id="west-focus-bottomleft" xlink:href="#focus-bottomleft"/>
   <use id="west-focus-bottom" xlink:href="#focus-bottom"/>
   <use id="west-focus-bottomright" xlink:href="#focus-bottomright"/>
-  <use id="attention-topleft" xlink:href="#attention" x="0" y="0"/>
-  <use id="attention-top" xlink:href="#attention" x="0" y="0"/>
-  <use id="attention-topright" xlink:href="#attention" x="0" y="0"/>
-  <use id="attention-left" xlink:href="#attention" x="0" y="0"/>
-  <use id="attention-center" xlink:href="#attention" x="0" y="0"/>
-  <use id="attention-right" xlink:href="#attention" x="0" y="0"/>
-  <use id="attention-bottomleft" xlink:href="#attention" x="0" y="0"/>
-  <use id="attention-bottom" xlink:href="#attention" x="0" y="0"/>
-  <use id="attention-bottomright" xlink:href="#attention" x="0" y="0"/>
+  <g id="attention-topleft">
+    <rect x="0" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="8" height="2" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="0" width="2" height="8" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g id="attention-top">
+    <rect x="8" y="0" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="0" width="48" height="2" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g id="attention-topright">
+    <rect x="56" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="0" width="8" height="2" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="62" y="0" width="2" height="8" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g id="attention-left">
+    <rect x="0" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="8" width="2" height="32" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g id="attention-center">
+    <rect x="8" y="8" width="48" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+  </g>
+  <g id="attention-right">
+    <rect x="56" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="62" y="8" width="2" height="32" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g id="attention-bottomleft">
+    <rect x="0" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="46" width="8" height="2" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="40" width="2" height="8" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g id="attention-bottom">
+    <rect x="8" y="40" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="46" width="48" height="2" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g id="attention-bottomright">
+    <rect x="56" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="46" width="8" height="2" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="62" y="40" width="2" height="8" fill="#ffd08a" fill-opacity="1">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
   <use id="north-attention-topleft" xlink:href="#attention-topleft"/>
   <use id="north-attention-top" xlink:href="#attention-top"/>
   <use id="north-attention-topright" xlink:href="#attention-topright"/>
@@ -180,15 +306,45 @@
   <use id="west-attention-bottomleft" xlink:href="#attention-bottomleft"/>
   <use id="west-attention-bottom" xlink:href="#attention-bottom"/>
   <use id="west-attention-bottomright" xlink:href="#attention-bottomright"/>
-  <use id="minimized-topleft" xlink:href="#minimized" x="0" y="0"/>
-  <use id="minimized-top" xlink:href="#minimized" x="0" y="0"/>
-  <use id="minimized-topright" xlink:href="#minimized" x="0" y="0"/>
-  <use id="minimized-left" xlink:href="#minimized" x="0" y="0"/>
-  <use id="minimized-center" xlink:href="#minimized" x="0" y="0"/>
-  <use id="minimized-right" xlink:href="#minimized" x="0" y="0"/>
-  <use id="minimized-bottomleft" xlink:href="#minimized" x="0" y="0"/>
-  <use id="minimized-bottom" xlink:href="#minimized" x="0" y="0"/>
-  <use id="minimized-bottomright" xlink:href="#minimized" x="0" y="0"/>
+  <g id="minimized-topleft">
+    <rect x="0" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="0.45"/>
+    <rect x="0" y="0" width="8" height="1" fill="#1d6b60" fill-opacity="0.5"/>
+    <rect x="0" y="0" width="1" height="8" fill="#1d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="minimized-top">
+    <rect x="8" y="0" width="48" height="8" fill="url(#btngrad)" fill-opacity="0.45"/>
+    <rect x="8" y="0" width="48" height="1" fill="#1d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="minimized-topright">
+    <rect x="56" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="0.45"/>
+    <rect x="56" y="0" width="8" height="1" fill="#1d6b60" fill-opacity="0.5"/>
+    <rect x="63" y="0" width="1" height="8" fill="#1d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="minimized-left">
+    <rect x="0" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="0.45"/>
+    <rect x="0" y="8" width="1" height="32" fill="#1d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="minimized-center">
+    <rect x="8" y="8" width="48" height="32" fill="url(#btngrad)" fill-opacity="0.45"/>
+  </g>
+  <g id="minimized-right">
+    <rect x="56" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="0.45"/>
+    <rect x="63" y="8" width="1" height="32" fill="#1d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="minimized-bottomleft">
+    <rect x="0" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="0.45"/>
+    <rect x="0" y="47" width="8" height="1" fill="#1d6b60" fill-opacity="0.5"/>
+    <rect x="0" y="40" width="1" height="8" fill="#1d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="minimized-bottom">
+    <rect x="8" y="40" width="48" height="8" fill="url(#btngrad)" fill-opacity="0.45"/>
+    <rect x="8" y="47" width="48" height="1" fill="#1d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="minimized-bottomright">
+    <rect x="56" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="0.45"/>
+    <rect x="56" y="47" width="8" height="1" fill="#1d6b60" fill-opacity="0.5"/>
+    <rect x="63" y="40" width="1" height="8" fill="#1d6b60" fill-opacity="0.5"/>
+  </g>
   <use id="north-minimized-topleft" xlink:href="#minimized-topleft"/>
   <use id="north-minimized-top" xlink:href="#minimized-top"/>
   <use id="north-minimized-topright" xlink:href="#minimized-topright"/>
@@ -216,15 +372,45 @@
   <use id="west-minimized-bottomleft" xlink:href="#minimized-bottomleft"/>
   <use id="west-minimized-bottom" xlink:href="#minimized-bottom"/>
   <use id="west-minimized-bottomright" xlink:href="#minimized-bottomright"/>
-  <use id="progress-topleft" xlink:href="#progress" x="0" y="0"/>
-  <use id="progress-top" xlink:href="#progress" x="0" y="0"/>
-  <use id="progress-topright" xlink:href="#progress" x="0" y="0"/>
-  <use id="progress-left" xlink:href="#progress" x="0" y="0"/>
-  <use id="progress-center" xlink:href="#progress" x="0" y="0"/>
-  <use id="progress-right" xlink:href="#progress" x="0" y="0"/>
-  <use id="progress-bottomleft" xlink:href="#progress" x="0" y="0"/>
-  <use id="progress-bottom" xlink:href="#progress" x="0" y="0"/>
-  <use id="progress-bottomright" xlink:href="#progress" x="0" y="0"/>
+  <g id="progress-topleft">
+    <rect x="0" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="8" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+    <rect x="0" y="0" width="1.5" height="8" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="progress-top">
+    <rect x="8" y="0" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="0" width="48" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="progress-topright">
+    <rect x="56" y="0" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="0" width="8" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+    <rect x="62.5" y="0" width="1.5" height="8" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="progress-left">
+    <rect x="0" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="8" width="1.5" height="32" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="progress-center">
+    <rect x="8" y="8" width="48" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+  </g>
+  <g id="progress-right">
+    <rect x="56" y="8" width="8" height="32" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="62.5" y="8" width="1.5" height="32" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="progress-bottomleft">
+    <rect x="0" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="0" y="46.5" width="8" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+    <rect x="0" y="40" width="1.5" height="8" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="progress-bottom">
+    <rect x="8" y="40" width="48" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="8" y="46.5" width="48" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
+  <g id="progress-bottomright">
+    <rect x="56" y="40" width="8" height="8" fill="url(#btngrad)" fill-opacity="1"/>
+    <rect x="56" y="46.5" width="8" height="1.5" fill="#2fd4bf" fill-opacity="1"/>
+    <rect x="62.5" y="40" width="1.5" height="8" fill="#2fd4bf" fill-opacity="1"/>
+  </g>
   <use id="north-progress-topleft" xlink:href="#progress-topleft"/>
   <use id="north-progress-top" xlink:href="#progress-top"/>
   <use id="north-progress-topright" xlink:href="#progress-topright"/>
@@ -252,5 +438,4 @@
   <use id="west-progress-bottomleft" xlink:href="#progress-bottomleft"/>
   <use id="west-progress-bottom" xlink:href="#progress-bottom"/>
   <use id="west-progress-bottomright" xlink:href="#progress-bottomright"/>
-
 </svg>

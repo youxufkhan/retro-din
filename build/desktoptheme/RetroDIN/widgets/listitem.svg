@@ -1,69 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-  <g id="normal">
-    <rect width="32" height="32" fill="#001210" fill-opacity="0"/>
+  <g id="normal-topleft">
+    <rect x="0" y="0" width="4" height="4" fill="#001210" fill-opacity="0"/>
   </g>
-  <g id="hover">
-    <rect width="32" height="32" fill="#3a2f1c"/>
-    <rect width="32" height="32" fill="none" stroke="#5a4526" stroke-width="1"/>
+  <g id="normal-top">
+    <rect x="4" y="0" width="24" height="4" fill="#001210" fill-opacity="0"/>
   </g>
-  <g id="pressed">
-    <rect width="32" height="32" fill="#241d12"/>
+  <g id="normal-topright">
+    <rect x="28" y="0" width="4" height="4" fill="#001210" fill-opacity="0"/>
   </g>
-  <g id="section">
-    <rect width="32" height="32" fill="#001210" fill-opacity="0"/>
+  <g id="normal-left">
+    <rect x="0" y="4" width="4" height="24" fill="#001210" fill-opacity="0"/>
   </g>
+  <g id="normal-center">
+    <rect x="4" y="4" width="24" height="24" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="normal-right">
+    <rect x="28" y="4" width="4" height="24" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="normal-bottomleft">
+    <rect x="0" y="28" width="4" height="4" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="normal-bottom">
+    <rect x="4" y="28" width="24" height="4" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="normal-bottomright">
+    <rect x="28" y="28" width="4" height="4" fill="#001210" fill-opacity="0"/>
+  </g>
+  <use id="north-normal-topleft" xlink:href="#normal-topleft"/>
+  <use id="north-normal-top" xlink:href="#normal-top"/>
+  <use id="north-normal-topright" xlink:href="#normal-topright"/>
+  <use id="north-normal-left" xlink:href="#normal-left"/>
+  <use id="north-normal-center" xlink:href="#normal-center"/>
+  <use id="north-normal-right" xlink:href="#normal-right"/>
+  <use id="north-normal-bottomleft" xlink:href="#normal-bottomleft"/>
+  <use id="north-normal-bottom" xlink:href="#normal-bottom"/>
+  <use id="north-normal-bottomright" xlink:href="#normal-bottomright"/>
+  <use id="east-normal-topleft" xlink:href="#normal-topleft"/>
+  <use id="east-normal-top" xlink:href="#normal-top"/>
+  <use id="east-normal-topright" xlink:href="#normal-topright"/>
+  <use id="east-normal-left" xlink:href="#normal-left"/>
+  <use id="east-normal-center" xlink:href="#normal-center"/>
+  <use id="east-normal-right" xlink:href="#normal-right"/>
+  <use id="east-normal-bottomleft" xlink:href="#normal-bottomleft"/>
+  <use id="east-normal-bottom" xlink:href="#normal-bottom"/>
+  <use id="east-normal-bottomright" xlink:href="#normal-bottomright"/>
+  <use id="west-normal-topleft" xlink:href="#normal-topleft"/>
+  <use id="west-normal-top" xlink:href="#normal-top"/>
+  <use id="west-normal-topright" xlink:href="#normal-topright"/>
+  <use id="west-normal-left" xlink:href="#normal-left"/>
+  <use id="west-normal-center" xlink:href="#normal-center"/>
+  <use id="west-normal-right" xlink:href="#normal-right"/>
+  <use id="west-normal-bottomleft" xlink:href="#normal-bottomleft"/>
+  <use id="west-normal-bottom" xlink:href="#normal-bottom"/>
+  <use id="west-normal-bottomright" xlink:href="#normal-bottomright"/>
+  <g id="hover-topleft">
+    <rect x="0" y="0" width="4" height="4" fill="#3a2f1c" fill-opacity="1"/>
+    <rect x="0" y="0" width="4" height="1" fill="#5a4526"/>
+    <rect x="0" y="0" width="1" height="4" fill="#5a4526"/>
+  </g>
+  <g id="hover-top">
+    <rect x="4" y="0" width="24" height="4" fill="#3a2f1c" fill-opacity="1"/>
+    <rect x="4" y="0" width="24" height="1" fill="#5a4526"/>
+  </g>
+  <g id="hover-topright">
+    <rect x="28" y="0" width="4" height="4" fill="#3a2f1c" fill-opacity="1"/>
+    <rect x="28" y="0" width="4" height="1" fill="#5a4526"/>
+    <rect x="31" y="0" width="1" height="4" fill="#5a4526"/>
+  </g>
+  <g id="hover-left">
+    <rect x="0" y="4" width="4" height="24" fill="#3a2f1c" fill-opacity="1"/>
+    <rect x="0" y="4" width="1" height="24" fill="#5a4526"/>
+  </g>
+  <g id="hover-center">
+    <rect x="4" y="4" width="24" height="24" fill="#3a2f1c" fill-opacity="1"/>
+  </g>
+  <g id="hover-right">
+    <rect x="28" y="4" width="4" height="24" fill="#3a2f1c" fill-opacity="1"/>
+    <rect x="31" y="4" width="1" height="24" fill="#5a4526"/>
+  </g>
+  <g id="hover-bottomleft">
+    <rect x="0" y="28" width="4" height="4" fill="#3a2f1c" fill-opacity="1"/>
+    <rect x="0" y="31" width="4" height="1" fill="#5a4526"/>
+    <rect x="0" y="28" width="1" height="4" fill="#5a4526"/>
+  </g>
+  <g id="hover-bottom">
+    <rect x="4" y="28" width="24" height="4" fill="#3a2f1c" fill-opacity="1"/>
+    <rect x="4" y="31" width="24" height="1" fill="#5a4526"/>
+  </g>
+  <g id="hover-bottomright">
+    <rect x="28" y="28" width="4" height="4" fill="#3a2f1c" fill-opacity="1"/>
+    <rect x="28" y="31" width="4" height="1" fill="#5a4526"/>
+    <rect x="31" y="28" width="1" height="4" fill="#5a4526"/>
+  </g>
+  <use id="north-hover-topleft" xlink:href="#hover-topleft"/>
+  <use id="north-hover-top" xlink:href="#hover-top"/>
+  <use id="north-hover-topright" xlink:href="#hover-topright"/>
+  <use id="north-hover-left" xlink:href="#hover-left"/>
+  <use id="north-hover-center" xlink:href="#hover-center"/>
+  <use id="north-hover-right" xlink:href="#hover-right"/>
+  <use id="north-hover-bottomleft" xlink:href="#hover-bottomleft"/>
+  <use id="north-hover-bottom" xlink:href="#hover-bottom"/>
+  <use id="north-hover-bottomright" xlink:href="#hover-bottomright"/>
+  <use id="east-hover-topleft" xlink:href="#hover-topleft"/>
+  <use id="east-hover-top" xlink:href="#hover-top"/>
+  <use id="east-hover-topright" xlink:href="#hover-topright"/>
+  <use id="east-hover-left" xlink:href="#hover-left"/>
+  <use id="east-hover-center" xlink:href="#hover-center"/>
+  <use id="east-hover-right" xlink:href="#hover-right"/>
+  <use id="east-hover-bottomleft" xlink:href="#hover-bottomleft"/>
+  <use id="east-hover-bottom" xlink:href="#hover-bottom"/>
+  <use id="east-hover-bottomright" xlink:href="#hover-bottomright"/>
+  <use id="west-hover-topleft" xlink:href="#hover-topleft"/>
+  <use id="west-hover-top" xlink:href="#hover-top"/>
+  <use id="west-hover-topright" xlink:href="#hover-topright"/>
+  <use id="west-hover-left" xlink:href="#hover-left"/>
+  <use id="west-hover-center" xlink:href="#hover-center"/>
+  <use id="west-hover-right" xlink:href="#hover-right"/>
+  <use id="west-hover-bottomleft" xlink:href="#hover-bottomleft"/>
+  <use id="west-hover-bottom" xlink:href="#hover-bottom"/>
+  <use id="west-hover-bottomright" xlink:href="#hover-bottomright"/>
+  <g id="pressed-topleft">
+    <rect x="0" y="0" width="4" height="4" fill="#241d12" fill-opacity="1"/>
+  </g>
+  <g id="pressed-top">
+    <rect x="4" y="0" width="24" height="4" fill="#241d12" fill-opacity="1"/>
+  </g>
+  <g id="pressed-topright">
+    <rect x="28" y="0" width="4" height="4" fill="#241d12" fill-opacity="1"/>
+  </g>
+  <g id="pressed-left">
+    <rect x="0" y="4" width="4" height="24" fill="#241d12" fill-opacity="1"/>
+  </g>
+  <g id="pressed-center">
+    <rect x="4" y="4" width="24" height="24" fill="#241d12" fill-opacity="1"/>
+  </g>
+  <g id="pressed-right">
+    <rect x="28" y="4" width="4" height="24" fill="#241d12" fill-opacity="1"/>
+  </g>
+  <g id="pressed-bottomleft">
+    <rect x="0" y="28" width="4" height="4" fill="#241d12" fill-opacity="1"/>
+  </g>
+  <g id="pressed-bottom">
+    <rect x="4" y="28" width="24" height="4" fill="#241d12" fill-opacity="1"/>
+  </g>
+  <g id="pressed-bottomright">
+    <rect x="28" y="28" width="4" height="4" fill="#241d12" fill-opacity="1"/>
+  </g>
+  <use id="north-pressed-topleft" xlink:href="#pressed-topleft"/>
+  <use id="north-pressed-top" xlink:href="#pressed-top"/>
+  <use id="north-pressed-topright" xlink:href="#pressed-topright"/>
+  <use id="north-pressed-left" xlink:href="#pressed-left"/>
+  <use id="north-pressed-center" xlink:href="#pressed-center"/>
+  <use id="north-pressed-right" xlink:href="#pressed-right"/>
+  <use id="north-pressed-bottomleft" xlink:href="#pressed-bottomleft"/>
+  <use id="north-pressed-bottom" xlink:href="#pressed-bottom"/>
+  <use id="north-pressed-bottomright" xlink:href="#pressed-bottomright"/>
+  <use id="east-pressed-topleft" xlink:href="#pressed-topleft"/>
+  <use id="east-pressed-top" xlink:href="#pressed-top"/>
+  <use id="east-pressed-topright" xlink:href="#pressed-topright"/>
+  <use id="east-pressed-left" xlink:href="#pressed-left"/>
+  <use id="east-pressed-center" xlink:href="#pressed-center"/>
+  <use id="east-pressed-right" xlink:href="#pressed-right"/>
+  <use id="east-pressed-bottomleft" xlink:href="#pressed-bottomleft"/>
+  <use id="east-pressed-bottom" xlink:href="#pressed-bottom"/>
+  <use id="east-pressed-bottomright" xlink:href="#pressed-bottomright"/>
+  <use id="west-pressed-topleft" xlink:href="#pressed-topleft"/>
+  <use id="west-pressed-top" xlink:href="#pressed-top"/>
+  <use id="west-pressed-topright" xlink:href="#pressed-topright"/>
+  <use id="west-pressed-left" xlink:href="#pressed-left"/>
+  <use id="west-pressed-center" xlink:href="#pressed-center"/>
+  <use id="west-pressed-right" xlink:href="#pressed-right"/>
+  <use id="west-pressed-bottomleft" xlink:href="#pressed-bottomleft"/>
+  <use id="west-pressed-bottom" xlink:href="#pressed-bottom"/>
+  <use id="west-pressed-bottomright" xlink:href="#pressed-bottomright"/>
+  <g id="section-topleft">
+    <rect x="0" y="0" width="4" height="4" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="section-top">
+    <rect x="4" y="0" width="24" height="4" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="section-topright">
+    <rect x="28" y="0" width="4" height="4" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="section-left">
+    <rect x="0" y="4" width="4" height="24" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="section-center">
+    <rect x="4" y="4" width="24" height="24" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="section-right">
+    <rect x="28" y="4" width="4" height="24" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="section-bottomleft">
+    <rect x="0" y="28" width="4" height="4" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="section-bottom">
+    <rect x="4" y="28" width="24" height="4" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="section-bottomright">
+    <rect x="28" y="28" width="4" height="4" fill="#001210" fill-opacity="0"/>
+  </g>
+  <use id="north-section-topleft" xlink:href="#section-topleft"/>
+  <use id="north-section-top" xlink:href="#section-top"/>
+  <use id="north-section-topright" xlink:href="#section-topright"/>
+  <use id="north-section-left" xlink:href="#section-left"/>
+  <use id="north-section-center" xlink:href="#section-center"/>
+  <use id="north-section-right" xlink:href="#section-right"/>
+  <use id="north-section-bottomleft" xlink:href="#section-bottomleft"/>
+  <use id="north-section-bottom" xlink:href="#section-bottom"/>
+  <use id="north-section-bottomright" xlink:href="#section-bottomright"/>
+  <use id="east-section-topleft" xlink:href="#section-topleft"/>
+  <use id="east-section-top" xlink:href="#section-top"/>
+  <use id="east-section-topright" xlink:href="#section-topright"/>
+  <use id="east-section-left" xlink:href="#section-left"/>
+  <use id="east-section-center" xlink:href="#section-center"/>
+  <use id="east-section-right" xlink:href="#section-right"/>
+  <use id="east-section-bottomleft" xlink:href="#section-bottomleft"/>
+  <use id="east-section-bottom" xlink:href="#section-bottom"/>
+  <use id="east-section-bottomright" xlink:href="#section-bottomright"/>
+  <use id="west-section-topleft" xlink:href="#section-topleft"/>
+  <use id="west-section-top" xlink:href="#section-top"/>
+  <use id="west-section-topright" xlink:href="#section-topright"/>
+  <use id="west-section-left" xlink:href="#section-left"/>
+  <use id="west-section-center" xlink:href="#section-center"/>
+  <use id="west-section-right" xlink:href="#section-right"/>
+  <use id="west-section-bottomleft" xlink:href="#section-bottomleft"/>
+  <use id="west-section-bottom" xlink:href="#section-bottom"/>
+  <use id="west-section-bottomright" xlink:href="#section-bottomright"/>
   <line id="separator" x1="2" y1="16" x2="30" y2="16" stroke="#0d6b60" stroke-opacity="0.5" stroke-width="1"/>
-  <use id="normal-topleft" xlink:href="#normal"/>
-  <use id="normal-top" xlink:href="#normal"/>
-  <use id="normal-topright" xlink:href="#normal"/>
-  <use id="normal-left" xlink:href="#normal"/>
-  <use id="normal-center" xlink:href="#normal"/>
-  <use id="normal-right" xlink:href="#normal"/>
-  <use id="normal-bottomleft" xlink:href="#normal"/>
-  <use id="normal-bottom" xlink:href="#normal"/>
-  <use id="normal-bottomright" xlink:href="#normal"/>
-  <rect id="normal-hint-top-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="normal-hint-bottom-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="normal-hint-left-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="normal-hint-right-margin" x="0" y="0" width="1" height="1"/>
-  <use id="hover-topleft" xlink:href="#hover"/>
-  <use id="hover-top" xlink:href="#hover"/>
-  <use id="hover-topright" xlink:href="#hover"/>
-  <use id="hover-left" xlink:href="#hover"/>
-  <use id="hover-center" xlink:href="#hover"/>
-  <use id="hover-right" xlink:href="#hover"/>
-  <use id="hover-bottomleft" xlink:href="#hover"/>
-  <use id="hover-bottom" xlink:href="#hover"/>
-  <use id="hover-bottomright" xlink:href="#hover"/>
-  <rect id="hover-hint-top-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="hover-hint-bottom-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="hover-hint-left-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="hover-hint-right-margin" x="0" y="0" width="1" height="1"/>
-  <use id="pressed-topleft" xlink:href="#pressed"/>
-  <use id="pressed-top" xlink:href="#pressed"/>
-  <use id="pressed-topright" xlink:href="#pressed"/>
-  <use id="pressed-left" xlink:href="#pressed"/>
-  <use id="pressed-center" xlink:href="#pressed"/>
-  <use id="pressed-right" xlink:href="#pressed"/>
-  <use id="pressed-bottomleft" xlink:href="#pressed"/>
-  <use id="pressed-bottom" xlink:href="#pressed"/>
-  <use id="pressed-bottomright" xlink:href="#pressed"/>
-  <rect id="pressed-hint-top-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="pressed-hint-bottom-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="pressed-hint-left-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="pressed-hint-right-margin" x="0" y="0" width="1" height="1"/>
-  <use id="section-topleft" xlink:href="#section"/>
-  <use id="section-top" xlink:href="#section"/>
-  <use id="section-topright" xlink:href="#section"/>
-  <use id="section-left" xlink:href="#section"/>
-  <use id="section-center" xlink:href="#section"/>
-  <use id="section-right" xlink:href="#section"/>
-  <use id="section-bottomleft" xlink:href="#section"/>
-  <use id="section-bottom" xlink:href="#section"/>
-  <use id="section-bottomright" xlink:href="#section"/>
-  <rect id="section-hint-top-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="section-hint-bottom-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="section-hint-left-margin" x="0" y="0" width="1" height="1"/>
-  <rect id="section-hint-right-margin" x="0" y="0" width="1" height="1"/>
 </svg>
