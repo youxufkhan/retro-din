@@ -1093,7 +1093,7 @@ Confirmed format against the user's own working panel layout at `~/.local/share/
 - [ ] **Step 1: Read relojlcd's actual config keys before guessing them**
 
 Run: `cat ~/.local/share/plasma/plasmoids/com.gitlab.corral1976.relojlcd/contents/config/main.xml`
-Expected: an XML `<group>`/`<entry name="...">` list. Note the exact entry names for text/glow color (likely under a group named `Appearance` or `Colors` — read the real file, don't assume). Use those exact names in Step 2's `config` block — if this plan's guessed key names below don't match, correct them here before writing the file.
+Expected/confirmed: all entries live under group `General` (not `Appearance`). There is no separate text/glow color pair — instead `clockStyle` (String) selects a named preset, and `customColor` (hex String) only applies when `clockStyle="Custom"`. Checked `contents/code/colorUtils.js`: there's a built-in preset literally named `"VFD Teal"` (`text: rgb(0, 0.9, 0.75)` ≈ `#00e6bf`) — close enough to the theme's teal that using the built-in preset (zero custom hex, tested code path) beats fighting with `Custom` + an exact hex for a marginal color difference. Use `"clockStyle": "VFD Teal"` under `/General` in Step 2, not the originally-guessed `textColor`/`glowColor` keys.
 
 - [ ] **Step 2: Write the layout**
 
@@ -1145,9 +1145,8 @@ var layout = {
                 },
                 {
                     "config": {
-                        "/Appearance": {
-                            "textColor": "94,234,212",
-                            "glowColor": "20,184,166"
+                        "/General": {
+                            "clockStyle": "VFD Teal"
                         }
                     },
                     "plugin": "com.gitlab.corral1976.relojlcd"
