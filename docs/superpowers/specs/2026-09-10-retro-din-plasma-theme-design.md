@@ -9,7 +9,9 @@ chassis, recessed glowing display wells (VFD-style), bezeled tactile
 buttons, one glowing rotary knob. Confirmed against user-supplied
 reference photos (Pioneer/Mitsubishi DIN units, Alpine VFD head units,
 Sony/Denon hi-fi stacks) and two user-supplied CRT-noise GIFs used as
-real phosphor texture on splash/lock.
+real phosphor texture on the splash screen (lock screen: see §3
+correction and §5 — full QML lock screen theming is not shippable in
+this package set).
 
 ### Two-tier color rule
 
@@ -21,10 +23,10 @@ interiors, and it reaches literally everything: list text, form
 fields, dialog labels.
 
 - **Tier 1 — display surfaces**: panel, task buttons, titlebar
-  (Aurorae), context menus, tooltips, OSD, notifications, splash,
-  lock screen. Full teal-glow-on-black treatment, amber for
-  active/focus/hover. Driven by desktoptheme SVG + Aurorae SVG, not
-  by `.colors`.
+  (Aurorae), context menus, tooltips, OSD, notifications, splash.
+  Full teal-glow-on-black treatment, amber for active/focus/hover.
+  Driven by desktoptheme SVG + Aurorae SVG, not by `.colors`. Lock
+  screen is **not** in this tier — see the correction in §3.
 - **Tier 2 — app interiors**: everything Breeze renders (menus,
   toolbars, list views, text fields) inside actual Qt apps. Flat by
   design — soft off-white text on charcoal, no glow. Driven by
@@ -67,8 +69,10 @@ Four packages, each independently installable:
 3. **Aurorae window decoration** — `~/.local/share/aurorae/themes/RetroDIN/`
 4. **Look-and-feel wrapper** — `~/.local/share/plasma/look-and-feel/com.retrodin.theme/`
    (metadata.json, `contents/defaults` pointing at 1–3 plus reused
-   existing icon set + Breeze widget style, `contents/layouts/...desktop-layout.js`
-   for the panel, splash + lockscreen QML)
+   existing icon set + Breeze widget style + a still-frame wallpaper,
+   `contents/layouts/...desktop-layout.js` for the panel,
+   `contents/splash/Splash.qml` for boot. No lockscreen content —
+   see §3 correction.)
 
 ## 3. Component → package → asset map
 
@@ -84,7 +88,62 @@ Four packages, each independently installable:
 | OSD (volume/brightness) | desktoptheme | OSD dialog background + custom bar rendering | level segments teal, current segment amber |
 | Notification popup | desktoptheme | `dialogs/background.svg(z)` (notification variant) | static, amber left-edge accent for urgent |
 | Splash screen | look-and-feel | `contents/splash/Splash.qml` | boot animation, CRT-gif overlay |
-| Lock screen | look-and-feel | `contents/lockscreen/LockScreenUi.qml` (or similar) | CRT-gif overlay, big VFD clock, recessed password field |
+| Lock screen | *(correction — see below)* | `.colors` + wallpaper only | not a functional override target |
+
+### Correction: lock screen is not a look-and-feel asset
+
+The originally-approved lock-screen mockup (big VFD clock, chassis
+frame, gif noise, custom password well) was specified as
+`contents/lockscreen/LockScreenUi.qml` inside the look-and-feel
+package. **That mechanism does not exist in this Plasma 6.6.5
+build.** Verified directly against the installed
+`plasma_lookandfeel` KPackageStructure plugin, which enumerates every
+content-type a `Plasma/LookAndFeel` package is allowed to declare:
+
+```
+$ strings /usr/lib/x86_64-linux-gnu/qt6/plugins/kf6/packagestructure/plasma_lookandfeel.so \
+    | grep -iE "^(splash|lock|layout|wallpaper|preview|defaults)"
+layoutdefaults
+previews
+lockscreenpreview
+splashpreview
+splash
+splashmainscript
+layouts
+```
+
+`splash` / `splashmainscript` / `layouts` / `layoutdefaults` are real,
+functional content types — confirmed, splash screen theming stays in
+scope as designed. `lockscreenpreview` is only the picker thumbnail
+(`contents/previews/lockscreen.png`, shown in the Global Theme KCM
+list). **There is no `lockscreen` content type.** The actual unlock
+UI (`LockScreenUi.qml`) lives in the `org.kde.plasma.desktop` *shell*
+package (`/usr/share/plasma/shells/org.kde.plasma.desktop/contents/lockscreen/`),
+not in any look-and-feel package, and `plasma-apply-lookandfeel`
+never touches it.
+
+Forking that file into a local shell override
+(`~/.local/share/plasma/shells/org.kde.plasma.desktop/contents/lockscreen/`)
+was considered and rejected: it duplicates authentication-adjacent
+QML that Plasma maintainers change across releases, it installs and
+uninstalls through no tool we're using (not `kpackagetool6`, not
+`plasma-apply-lookandfeel`), and a broken import there means the user
+cannot unlock their session — the one failure mode in this entire
+project that can lock someone out of their own desktop. Rejected on
+risk, not effort.
+
+**What ships instead:** the lock screen (like every other Qt/Kirigami
+surface) inherits the active color scheme automatically — charcoal
+background, teal text, amber focus ring on the password field, all
+free from `RetroDIN.colors` with zero custom code. To recover some of
+the mockup's atmosphere, `defaults` sets `[Wallpaper] Image=` (a real,
+verified key — see §7 testing for `org.kde.breeze.desktop`'s
+`defaults` file, same group) to a still frame extracted from
+`movie8_f_glow.gif`, composited over charcoal. The lock screen honors
+the desktop wallpaper, so this is a legitimate substitute, not a
+downgrade dressed up — it just won't have the DSEG7 clock face or
+chassis frame from the mockup. Told to the user directly (not left as
+a surprise on first apply): see chat.
 
 ### Panel-background tiling constraint (confirmed via asset inspection)
 
@@ -131,16 +190,25 @@ its own digits.
   or `WhiteSur-dark`), no custom icons authored.
 - **SDDM login theme** — separate package type, not applied by
   `plasma-apply-lookandfeel`. Not built.
+- **Lock screen custom QML** — verified not overridable from a
+  look-and-feel package in this build (see §3 correction); the real
+  file lives in the `org.kde.plasma.desktop` shell package and
+  forking it risks breaking session unlock. Ships as color-scheme +
+  wallpaper inheritance only. Revisit only as a deliberately
+  separately-owned risk, never bundled silently into this theme.
 
 ## 6. Open items (non-blocking, revisit after first apply)
 
 - Amber as global `.colors` `Highlight`/`DecorationFocus` — user has
   only seen it in a small mockup context, not app-wide. Flagged in §1.
-- The two user-supplied GIFs (`movie2_glow.gif` ~4.8MB, `movie8_f_glow.gif`
-  ~5.3MB, both 1024×256) are used as splash/lock phosphor-noise
-  texture at 28% opacity, screen-blend. Ship re-encoded/shortened
-  versions in the final package, not these originals — target a few
-  hundred KB, short seamless loop.
+- The two user-supplied GIFs (`movie2_glow.gif` ~4.8MB,
+  `movie8_f_glow.gif` ~5.3MB, both 1024×256): `movie2_glow.gif`
+  animates behind the splash screen at 28% opacity/screen-blend. A
+  still frame extracted from `movie8_f_glow.gif` becomes the lock
+  screen's wallpaper (composited over charcoal, see §3 correction) —
+  it does not animate there, wallpapers are static images. Ship a
+  re-encoded/shortened splash gif in the final package, not the
+  5MB original — target a few hundred KB, short seamless loop.
 - Distribution: personal use only, not KDE Store. Skips license file
   polish, screenshot set, store metadata. Revisit if user wants to
   publish later.
