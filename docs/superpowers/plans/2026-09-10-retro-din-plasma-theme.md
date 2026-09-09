@@ -1291,9 +1291,6 @@ Rectangle {
             font.letterSpacing: 6
             color: "#5eead4"
             anchors.horizontalCenter: parent.horizontalCenter
-
-            layer.enabled: true
-            layer.effect: Kirigami.ShadowedTexture {}
         }
 
         Text {
@@ -1318,7 +1315,7 @@ Rectangle {
 }
 ```
 
-(Dropped `Kirigami.ShadowedTexture` if it's unavailable in this Kirigami version — Step 3 catches that as a runtime QML error, not a syntax error, so it's called out explicitly there rather than silently assumed to work.)
+(`Kirigami.ShadowedTexture` dropped proactively, not after a failure: grepping the installed Kirigami QML plugin only turned it up as an internal type used by `ShadowedImage`/`Avatar`, not confirmed as a directly-usable `layer.effect` in the public API. Plain colored text is simpler and guaranteed to work — no glow-via-shader for the splash wordmark, just the teal color.)
 
 - [ ] **Step 3: Validate QML syntax and check for the ShadowedTexture risk**
 
