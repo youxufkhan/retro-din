@@ -32,6 +32,7 @@ cp build/assets/noise.gif \
     build/wallpapers/com.retrodin.crtnoise/contents/images/noise.gif
 cp build/assets/noise.gif \
     build/lookandfeel/com.retrodin.theme/contents/splash/images/noise.gif
+cp build/assets/noise.gif build/sddm/RetroDIN/background.gif
 ln -sfT "$(pwd)/build/wallpapers/com.retrodin.crtnoise" \
     ~/.local/share/plasma/wallpapers/com.retrodin.crtnoise
 mkdir -p ~/.local/share/icons
