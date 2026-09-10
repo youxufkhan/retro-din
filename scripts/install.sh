@@ -25,6 +25,15 @@ ln -sfT "$(pwd)/build/wallpapers/RetroDIN-lockwall" \
 python3 scripts/gen_din_icons.py
 python3 scripts/gen_app_icons.py
 python3 scripts/gen_icons.py
+mkdir -p ~/.local/share/plasma/wallpapers
+# the animated wallpaper plugin: the lock screen renders a wallpaper plugin,
+# and org.kde.image only ever draws a still frame
+cp build/assets/noise.gif \
+    build/wallpapers/com.retrodin.crtnoise/contents/images/noise.gif
+cp build/assets/noise.gif \
+    build/lookandfeel/com.retrodin.theme/contents/splash/images/noise.gif
+ln -sfT "$(pwd)/build/wallpapers/com.retrodin.crtnoise" \
+    ~/.local/share/plasma/wallpapers/com.retrodin.crtnoise
 mkdir -p ~/.local/share/icons
 ln -sfT "$(pwd)/build/icons/RetroDIN" \
     ~/.local/share/icons/RetroDIN

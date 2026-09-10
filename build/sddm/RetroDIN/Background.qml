@@ -18,13 +18,16 @@ FocusScope {
         anchors.fill: parent
     }
 
-    Image {
+    // AnimatedImage, not Image: the DIN background is a CRT-noise loop, and
+    // Image would decode only its first frame. sourceSize is dropped because
+    // forcing a scale per frame defeats the animation.
+    AnimatedImage {
         id: sceneImageBackground
         anchors.fill: parent
-        sourceSize.width: parent.width
-        sourceSize.height: parent.height
         fillMode: Image.PreserveAspectCrop
-        smooth: true;
+        playing: true
+        cache: false
+        smooth: true
     }
 
     states: [

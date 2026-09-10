@@ -1,0 +1,12 @@
+{
+    "KPackageStructure": "Plasma/Wallpaper",
+    "KPlugin": {
+        "Id": "com.retrodin.crtnoise",
+        "Name": "Retro DIN CRT Noise",
+        "Description": "Animated CRT phosphor noise over a charcoal faceplate",
+        "License": "GPL-3.0",
+        "Version": "1.0",
+        "EnabledByDefault": true
+    },
+    "X-KDE-ParentApp": "org.kde.plasmashell"
+}
