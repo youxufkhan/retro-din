@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "build/icons/RetroDIN-src"
+SRC = ROOT / "icons/RetroDIN-src"
 SIZES = ["16", "22", "24", "32", "48", "64"]
 
 TEAL = "#5eead4"

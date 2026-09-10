@@ -25,7 +25,7 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-SRC="$(pwd)/build/sddm/RetroDIN"
+SRC="$(pwd)/sddm/RetroDIN"
 DEST=/usr/share/sddm/themes/RetroDIN
 
 [ -d "$SRC" ] || { echo "missing $SRC" >&2; exit 1; }

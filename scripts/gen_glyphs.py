@@ -16,7 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import svgslice as S  # noqa: E402
 
-OUT = Path(__file__).resolve().parent.parent / "build/desktoptheme/RetroDIN/widgets"
+OUT = Path(__file__).resolve().parent.parent / "desktoptheme/RetroDIN/widgets"
 
 TEAL = "#5eead4"
 TEAL_MID = "#14b8a6"

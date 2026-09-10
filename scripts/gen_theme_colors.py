@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Derive build/desktoptheme/RetroDIN/colors from the colour scheme.
+"""Derive desktoptheme/RetroDIN/colors from the colour scheme.
 
 The desktoptheme's colors file only styles Plasma shell widgets - panel,
 systray, popups - so its foregrounds can be the palette's bright teal while
@@ -10,8 +10,8 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "build/color-schemes/RetroDIN.colors"
-DEST = ROOT / "build/desktoptheme/RetroDIN/colors"
+SRC = ROOT / "color-schemes/RetroDIN.colors"
+DEST = ROOT / "desktoptheme/RetroDIN/colors"
 
 PANEL_TEAL = "94,234,212"
 PANEL_GROUPS = {"Colors:Window", "Colors:View", "Colors:Header",

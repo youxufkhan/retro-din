@@ -6,7 +6,7 @@ family that varies by one number: battery charge, signal strength, volume
 step. Those are generated rather than drawn, which is both cheaper and more
 consistent than hand-authoring each step.
 
-Output goes to build/icons/RetroDIN-src, which gen_icons.py overlays last so
+Output goes to icons/RetroDIN-src, which gen_icons.py overlays last so
 these win over the recoloured breeze fallback. Every icon also gets its
 `-symbolic` (and where breeze has one, `-rtl`) alias as a symlink, because
 applets ask for whichever spelling they were written against.
@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "build/icons/RetroDIN-src"
+SRC = ROOT / "icons/RetroDIN-src"
 SIZES = ["16", "22", "24", "32"]
 
 TEAL = "#5eead4"

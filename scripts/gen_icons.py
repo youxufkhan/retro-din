@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate build/icons/RetroDIN: breeze-dark recoloured to the DIN palette.
+"""Generate icons/RetroDIN: breeze-dark recoloured to the DIN palette.
 
 Breeze icons carry a `current-color-scheme` <style> block whose colour the
 paths reference through fill:currentColor, so rewriting that one declaration
@@ -8,7 +8,7 @@ restyles the whole glyph. Icons without the block are hand-drawn colour art
 recognisable.
 
 The output is ~43MB and fully reproducible, so it is generated rather than
-committed. Hand-authored overrides live in build/icons/RetroDIN-src and are
+committed. Hand-authored overrides live in icons/RetroDIN-src and are
 layered on last. Run before scripts/install.sh.
 """
 import re
@@ -18,8 +18,8 @@ from pathlib import Path
 
 BASE = Path(sys.argv[1] if len(sys.argv) > 1 else "/usr/share/icons/breeze-dark")
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "build/icons/RetroDIN"
-SRC = ROOT / "build/icons/RetroDIN-src"
+OUT = ROOT / "icons/RetroDIN"
+SRC = ROOT / "icons/RetroDIN-src"
 
 # breeze semantic colour -> DIN palette. Amber carries both warning tiers, per
 # the spec's "keep amber, stay consistent" decision; no red is introduced.

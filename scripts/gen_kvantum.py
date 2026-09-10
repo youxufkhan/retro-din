@@ -20,7 +20,7 @@ from pathlib import Path
 
 BASE = Path(sys.argv[1] if len(sys.argv) > 1 else "/usr/share/Kvantum/KvDark")
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "build/kvantum/RetroDIN"
+OUT = ROOT / "kvantum/RetroDIN"
 
 # (max_luminance, target) - the DIN ramp, cool-tinted, monotonic
 RAMP = [
@@ -84,6 +84,9 @@ def build_config():
     if n != 1:
         sys.exit("could not locate [GeneralColors] in the base kvconfig")
     text = re.sub(r"^comment=.*$", "comment=90s car-stereo/hi-fi DIN unit style",
+                  text, flags=re.MULTILINE)
+    text = re.sub(r"^author=.*$",
+                  "author=yousuf khan (colour remap of Tsu Jan's KvDark)",
                   text, flags=re.MULTILINE)
     return text
 
