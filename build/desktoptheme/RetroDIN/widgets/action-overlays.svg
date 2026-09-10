@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="198" height="22" viewBox="0 0 198 22">
+  <g id="add-normal"><circle cx="11" cy="11" r="9" fill="#001210" stroke="#5eead4" stroke-width="1.5"/><rect x="6" y="10" width="10" height="2" fill="#5eead4"/><rect x="10" y="6" width="2" height="10" fill="#5eead4"/></g>
+  <g id="add-hover"><circle cx="33" cy="11" r="9" fill="#001210" stroke="#14b8a6" stroke-width="1.5"/><rect x="28" y="10" width="10" height="2" fill="#14b8a6"/><rect x="32" y="6" width="2" height="10" fill="#14b8a6"/></g>
+  <g id="add-pressed"><circle cx="55" cy="11" r="9" fill="#001210" stroke="#ffb454" stroke-width="1.5"/><rect x="50" y="10" width="10" height="2" fill="#ffb454"/><rect x="54" y="6" width="2" height="10" fill="#ffb454"/></g>
+  <g id="remove-normal"><circle cx="77" cy="11" r="9" fill="#001210" stroke="#5eead4" stroke-width="1.5"/><rect x="72" y="10" width="10" height="2" fill="#5eead4"/></g>
+  <g id="remove-hover"><circle cx="99" cy="11" r="9" fill="#001210" stroke="#14b8a6" stroke-width="1.5"/><rect x="94" y="10" width="10" height="2" fill="#14b8a6"/></g>
+  <g id="remove-pressed"><circle cx="121" cy="11" r="9" fill="#001210" stroke="#ffb454" stroke-width="1.5"/><rect x="116" y="10" width="10" height="2" fill="#ffb454"/></g>
+  <g id="open-normal"><circle cx="143" cy="11" r="9" fill="#001210" stroke="#5eead4" stroke-width="1.5"/><polyline points="140,6 146,11 140,16" fill="none" stroke="#5eead4" stroke-width="2" stroke-linecap="square"/></g>
+  <g id="open-hover"><circle cx="165" cy="11" r="9" fill="#001210" stroke="#14b8a6" stroke-width="1.5"/><polyline points="162,6 168,11 162,16" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="square"/></g>
+  <g id="open-pressed"><circle cx="187" cy="11" r="9" fill="#001210" stroke="#ffb454" stroke-width="1.5"/><polyline points="184,6 190,11 184,16" fill="none" stroke="#ffb454" stroke-width="2" stroke-linecap="square"/></g>
+</svg>

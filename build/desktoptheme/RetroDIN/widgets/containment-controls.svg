@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="64" viewBox="0 0 112 64">
+  <g id="south-center"><rect x="3" y="5" width="2" height="6" fill="#0d6b60"/><rect x="7" y="5" width="2" height="6" fill="#0d6b60"/><rect x="11" y="5" width="2" height="6" fill="#0d6b60"/></g>
+  <g id="south-top"><rect x="18" y="7" width="12" height="2" fill="#14b8a6"/></g>
+  <g id="south-bottom"><rect x="34" y="7" width="12" height="2" fill="#14b8a6"/></g>
+  <g id="south-maxslider"><rect x="52" y="4" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="south-offsetslider"><rect x="68" y="4" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="south-minslider"><rect x="84" y="4" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="north-center"><rect x="99" y="5" width="2" height="6" fill="#0d6b60"/><rect x="103" y="5" width="2" height="6" fill="#0d6b60"/><rect x="107" y="5" width="2" height="6" fill="#0d6b60"/></g>
+  <g id="north-top"><rect x="2" y="23" width="12" height="2" fill="#14b8a6"/></g>
+  <g id="north-bottom"><rect x="18" y="23" width="12" height="2" fill="#14b8a6"/></g>
+  <g id="north-maxslider"><rect x="36" y="20" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="north-offsetslider"><rect x="52" y="20" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="north-minslider"><rect x="68" y="20" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="east-center"><rect x="83" y="21" width="2" height="6" fill="#0d6b60"/><rect x="87" y="21" width="2" height="6" fill="#0d6b60"/><rect x="91" y="21" width="2" height="6" fill="#0d6b60"/></g>
+  <g id="east-left"><rect x="98" y="23" width="12" height="2" fill="#14b8a6"/></g>
+  <g id="east-right"><rect x="2" y="39" width="12" height="2" fill="#14b8a6"/></g>
+  <g id="east-maxslider"><rect x="20" y="36" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="east-offsetslider"><rect x="36" y="36" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="east-minslider"><rect x="52" y="36" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="west-center"><rect x="67" y="37" width="2" height="6" fill="#0d6b60"/><rect x="71" y="37" width="2" height="6" fill="#0d6b60"/><rect x="75" y="37" width="2" height="6" fill="#0d6b60"/></g>
+  <g id="west-left"><rect x="82" y="39" width="12" height="2" fill="#14b8a6"/></g>
+  <g id="west-right"><rect x="98" y="39" width="12" height="2" fill="#14b8a6"/></g>
+  <g id="west-maxslider"><rect x="4" y="52" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="west-offsetslider"><rect x="20" y="52" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="west-minslider"><rect x="36" y="52" width="8" height="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/></g>
+  <g id="vertical-centerindicator"><rect x="50" y="55" width="12" height="2" fill="#14b8a6"/></g>
+  <g id="horizontal-centerindicator"><rect x="66" y="55" width="12" height="2" fill="#14b8a6"/></g>
+</svg>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="196" height="32" viewBox="0 0 196 32">
+  <defs>
+    <linearGradient id="metalgrad" gradientUnits="userSpaceOnUse"
+                    x1="0" y1="0" x2="0" y2="32">
+      <stop offset="0" stop-color="#414a4d"/>
+      <stop offset="0.45" stop-color="#272d2f"/>
+      <stop offset="1" stop-color="#14181a"/>
+    </linearGradient>
+    <radialGradient id="knobgrad" cx="35%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#454b4d"/>
+      <stop offset="1" stop-color="#181c1d"/>
+    </radialGradient>
+  </defs>
+  <g id="groove-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="6" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="groove-top">
+    <rect x="6" y="0" width="20" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="1" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="groove-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="31" y="0" width="1" height="6" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="groove-left">
+    <rect x="0" y="6" width="6" height="20" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="6" width="1" height="20" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="groove-center">
+    <rect x="6" y="6" width="20" height="20" fill="#001210" fill-opacity="1"/>
+  </g>
+  <g id="groove-right">
+    <rect x="26" y="6" width="6" height="20" fill="#001210" fill-opacity="1"/>
+    <rect x="31" y="6" width="1" height="20" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="groove-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="31" width="6" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="0" y="26" width="1" height="6" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="groove-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="6" y="31" width="20" height="1" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="groove-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="26" y="31" width="6" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="31" y="26" width="1" height="6" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="groove-highlight-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#ffb454" fill-opacity="0.85"/>
+    <rect x="0" y="0" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="groove-highlight-top">
+    <rect x="6" y="0" width="20" height="6" fill="#ffb454" fill-opacity="0.85"/>
+    <rect x="6" y="0" width="20" height="1" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="groove-highlight-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#ffb454" fill-opacity="0.85"/>
+    <rect x="26" y="0" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="31" y="0" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="groove-highlight-left">
+    <rect x="0" y="6" width="6" height="20" fill="#ffb454" fill-opacity="0.85"/>
+    <rect x="0" y="6" width="1" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="groove-highlight-center">
+    <rect x="6" y="6" width="20" height="20" fill="#ffb454" fill-opacity="0.85"/>
+  </g>
+  <g id="groove-highlight-right">
+    <rect x="26" y="6" width="6" height="20" fill="#ffb454" fill-opacity="0.85"/>
+    <rect x="31" y="6" width="1" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="groove-highlight-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#ffb454" fill-opacity="0.85"/>
+    <rect x="0" y="31" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="26" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="groove-highlight-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#ffb454" fill-opacity="0.85"/>
+    <rect x="6" y="31" width="20" height="1" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="groove-highlight-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#ffb454" fill-opacity="0.85"/>
+    <rect x="26" y="31" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="31" y="26" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="horizontal-slider-handle">
+    <circle cx="51" cy="11" r="7" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="51" cy="11" r="8" fill="none" stroke="#14b8a6" stroke-width="2"/>
+    <rect x="50.25" y="5" width="1.5" height="4.2" fill="#5eead4"/>
+  </g>
+  <g id="horizontal-slider-hover">
+    <circle cx="73" cy="11" r="7" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="73" cy="11" r="8" fill="none" stroke="#5eead4" stroke-width="2"/>
+    <rect x="72.25" y="5" width="1.5" height="4.2" fill="#5eead4"/>
+  </g>
+  <g id="horizontal-slider-focus">
+    <circle cx="95" cy="11" r="7" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="95" cy="11" r="8" fill="none" stroke="#ffb454" stroke-width="2"/>
+    <rect x="94.25" y="5" width="1.5" height="4.2" fill="#5eead4"/>
+  </g>
+  <rect id="horizontal-slider-shadow" x="40" y="22" width="22" height="10" fill="none" fill-opacity="0"/>
+  <g id="vertical-slider-handle">
+    <circle cx="117" cy="11" r="7" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="117" cy="11" r="8" fill="none" stroke="#14b8a6" stroke-width="2"/>
+    <rect x="116.25" y="5" width="1.5" height="4.2" fill="#5eead4"/>
+  </g>
+  <g id="vertical-slider-hover">
+    <circle cx="139" cy="11" r="7" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="139" cy="11" r="8" fill="none" stroke="#5eead4" stroke-width="2"/>
+    <rect x="138.25" y="5" width="1.5" height="4.2" fill="#5eead4"/>
+  </g>
+  <g id="vertical-slider-focus">
+    <circle cx="161" cy="11" r="7" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="161" cy="11" r="8" fill="none" stroke="#ffb454" stroke-width="2"/>
+    <rect x="160.25" y="5" width="1.5" height="4.2" fill="#5eead4"/>
+  </g>
+  <rect id="vertical-slider-shadow" x="106" y="22" width="22" height="10" fill="none" fill-opacity="0"/>
+  <rect id="shadow" x="172" y="22" width="22" height="10" fill="none" fill-opacity="0"/>
+  <rect id="msc" x="190" y="29" width="3" height="3" fill="#ffb454" fill-opacity="0.5"/>
+</svg>

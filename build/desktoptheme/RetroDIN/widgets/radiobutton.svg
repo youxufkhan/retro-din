@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="22" viewBox="0 0 132 22">
+  <g id="normal">
+    <circle cx="11" cy="11" r="8" fill="#001210" stroke="#0d6b60" stroke-width="1.5"/>
+  </g>
+  <g id="hover">
+    <circle cx="33" cy="11" r="8" fill="#001210" stroke="#14b8a6" stroke-width="1.5"/>
+  </g>
+  <g id="focus">
+    <circle cx="55" cy="11" r="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/>
+  </g>
+  <g id="checked">
+    <circle cx="77" cy="11" r="8" fill="#001210" stroke="#ffb454" stroke-width="1.5"/>
+    <circle cx="77" cy="11" r="4" fill="#ffb454"/>
+  </g>
+  <circle id="symbol" cx="99" cy="11" r="4" fill="#ffb454"/>
+  <rect id="shadow" x="110" y="0" width="22" height="22" fill="none" fill-opacity="0"/>
+</svg>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="16" viewBox="0 0 48 16">
+  <g id="center">
+    <rect x="2" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="6" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="10" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="14" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="2" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="6" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="10" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="14" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="2" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="6" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="10" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="14" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="2" y="14" width="2" height="2" fill="#0d6b60"/>
+    <rect x="6" y="14" width="2" height="2" fill="#0d6b60"/>
+    <rect x="10" y="14" width="2" height="2" fill="#0d6b60"/>
+    <rect x="14" y="14" width="2" height="2" fill="#0d6b60"/>
+  </g>
+  <g id="top">
+    <rect x="18" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="22" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="26" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="30" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="18" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="22" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="26" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="30" y="6" width="2" height="2" fill="#0d6b60"/>
+  </g>
+  <g id="bottom">
+    <rect x="18" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="22" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="26" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="30" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="18" y="14" width="2" height="2" fill="#0d6b60"/>
+    <rect x="22" y="14" width="2" height="2" fill="#0d6b60"/>
+    <rect x="26" y="14" width="2" height="2" fill="#0d6b60"/>
+    <rect x="30" y="14" width="2" height="2" fill="#0d6b60"/>
+  </g>
+  <g id="background-vertical-top">
+    <rect x="34" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="38" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="42" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="46" y="2" width="2" height="2" fill="#0d6b60"/>
+    <rect x="34" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="38" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="42" y="6" width="2" height="2" fill="#0d6b60"/>
+    <rect x="46" y="6" width="2" height="2" fill="#0d6b60"/>
+  </g>
+  <g id="background-vertical-topleft">
+    <rect x="34" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="38" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="34" y="14" width="2" height="2" fill="#0d6b60"/>
+    <rect x="38" y="14" width="2" height="2" fill="#0d6b60"/>
+  </g>
+  <g id="background-vertical-topright">
+    <rect x="42" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="46" y="10" width="2" height="2" fill="#0d6b60"/>
+    <rect x="42" y="14" width="2" height="2" fill="#0d6b60"/>
+    <rect x="46" y="14" width="2" height="2" fill="#0d6b60"/>
+  </g>
+</svg>

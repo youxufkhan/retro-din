@@ -438,4 +438,8 @@
   <use id="west-progress-bottomleft" xlink:href="#progress-bottomleft"/>
   <use id="west-progress-bottom" xlink:href="#progress-bottom"/>
   <use id="west-progress-bottomright" xlink:href="#progress-bottomright"/>
+  <polyline id="group-expander-top" points="3,7 6,3 9,7" fill="none" stroke="#5eead4" stroke-width="1.5" stroke-linecap="square"/>
+  <polyline id="group-expander-bottom" points="3,3 6,7 9,3" fill="none" stroke="#5eead4" stroke-width="1.5" stroke-linecap="square"/>
+  <polyline id="group-expander-left" points="7,3 3,6 7,9" fill="none" stroke="#5eead4" stroke-width="1.5" stroke-linecap="square"/>
+  <polyline id="group-expander-right" points="3,3 7,6 3,9" fill="none" stroke="#5eead4" stroke-width="1.5" stroke-linecap="square"/>
 </svg>

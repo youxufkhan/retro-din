@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="24" viewBox="0 0 384 24">
+  <defs>
+    <linearGradient id="metalgrad" gradientUnits="userSpaceOnUse"
+                    x1="0" y1="0" x2="0" y2="24">
+      <stop offset="0" stop-color="#414a4d"/>
+      <stop offset="0.45" stop-color="#272d2f"/>
+      <stop offset="1" stop-color="#14181a"/>
+    </linearGradient>
+    <radialGradient id="knobgrad" cx="35%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#454b4d"/>
+      <stop offset="1" stop-color="#181c1d"/>
+    </radialGradient>
+  </defs>
+  <g id="16-16-normal">
+    <circle cx="12" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="12" cy="12" r="10" fill="none" stroke="#14b8a6" stroke-width="2"/>
+  </g>
+  <g id="16-16-hover">
+    <circle cx="36" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="36" cy="12" r="10" fill="none" stroke="#5eead4" stroke-width="2"/>
+  </g>
+  <g id="16-16-pressed">
+    <circle cx="60" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="60" cy="12" r="10" fill="none" stroke="#ffd08a" stroke-width="2"/>
+  </g>
+  <g id="16-16-focus">
+    <circle cx="84" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="84" cy="12" r="10" fill="none" stroke="#ffb454" stroke-width="2"/>
+  </g>
+  <g id="22-22-normal">
+    <circle cx="108" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="108" cy="12" r="10" fill="none" stroke="#14b8a6" stroke-width="2"/>
+  </g>
+  <g id="22-22-hover">
+    <circle cx="132" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="132" cy="12" r="10" fill="none" stroke="#5eead4" stroke-width="2"/>
+  </g>
+  <g id="22-22-pressed">
+    <circle cx="156" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="156" cy="12" r="10" fill="none" stroke="#ffd08a" stroke-width="2"/>
+  </g>
+  <g id="22-22-focus">
+    <circle cx="180" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="180" cy="12" r="10" fill="none" stroke="#ffb454" stroke-width="2"/>
+  </g>
+  <g id="24-24-normal">
+    <circle cx="204" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="204" cy="12" r="10" fill="none" stroke="#14b8a6" stroke-width="2"/>
+  </g>
+  <g id="24-24-hover">
+    <circle cx="228" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="228" cy="12" r="10" fill="none" stroke="#5eead4" stroke-width="2"/>
+  </g>
+  <g id="24-24-pressed">
+    <circle cx="252" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="252" cy="12" r="10" fill="none" stroke="#ffd08a" stroke-width="2"/>
+  </g>
+  <g id="24-24-focus">
+    <circle cx="276" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="276" cy="12" r="10" fill="none" stroke="#ffb454" stroke-width="2"/>
+  </g>
+  <g id="normal">
+    <circle cx="300" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="300" cy="12" r="10" fill="none" stroke="#14b8a6" stroke-width="2"/>
+  </g>
+  <g id="hover">
+    <circle cx="324" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="324" cy="12" r="10" fill="none" stroke="#5eead4" stroke-width="2"/>
+  </g>
+  <g id="pressed">
+    <circle cx="348" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="348" cy="12" r="10" fill="none" stroke="#ffd08a" stroke-width="2"/>
+  </g>
+  <g id="focus">
+    <circle cx="372" cy="12" r="9" fill="url(#knobgrad)" stroke="#050606" stroke-width="1"/>
+    <circle cx="372" cy="12" r="10" fill="none" stroke="#ffb454" stroke-width="2"/>
+  </g>
+</svg>

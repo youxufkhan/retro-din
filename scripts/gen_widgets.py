@@ -21,6 +21,7 @@ OUT = Path(__file__).resolve().parent.parent / "build/desktoptheme/RetroDIN/widg
 
 WELL = "#001210"
 BORDER_DARK = "#0a2e29"
+WELL_ALT = "#04201d"
 TEAL_DIM = "#0d6b60"
 TEAL = "#14b8a6"
 TEAL_BRIGHT = "#2fd4bf"
@@ -82,6 +83,27 @@ SPEC = {
         f' fill="{AMBER}" fill-opacity="0.5"/>',
         '  <rect id="hint-scrollbar-size" x="0" y="0" width="12" height="12"'
         ' fill="none"/>',
+    ]),
+    # widgets/button backs every Plasma button, not just the launcher. The
+    # launcher's knob identity comes from the icon theme's start-here glyph,
+    # so this is a button bezel rather than a dial.
+    "button": dict(size=(32, 32), corner=6, margin=4, flags=[], states=[
+        ("normal",             METAL, 1, [(TEAL_DIM, 1, 0, 1)]),
+        ("hover",              METAL, 1, [(TEAL, 1, 0, 1)]),
+        ("focus",              METAL, 1, [(AMBER, 1, 0, 2)]),
+        ("pressed",            WELL,  1, [(AMBER, 1, 0, 1)]),
+        ("shadow",             "#000000", 0.3, []),
+        ("mask-normal",        "#ffffff", 1, []),
+        ("toolbutton-hover",   WELL_ALT, 1, [(TEAL, 1, 0, 1)]),
+        ("toolbutton-focus",   WELL_ALT, 1, [(AMBER, 1, 0, 2)]),
+        ("toolbutton-pressed", WELL, 1, [(AMBER, 1, 0, 1)]),
+    ], extras=[
+        # upstream's shadow-extent markers; they must resolve but not paint
+        *[f'  <rect id="{eid}" x="{x}" y="0" width="2" height="2"'
+          ' fill="none" fill-opacity="0"/>'
+          for eid, x in [("a", 0), ("b", 3), ("c", 6), ("d", 9), ("e", 12),
+                         ("pc", 15), ("sb", 18), ("sl", 21), ("sr", 24),
+                         ("st", 27)]],
     ]),
     "tabbar": dict(size=(64, 64), corner=8, margin=4,
                    flags=["hint-tile-center"], states=[

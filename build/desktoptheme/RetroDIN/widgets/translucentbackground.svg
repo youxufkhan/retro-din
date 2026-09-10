@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="topleft">
+    <rect x="0" y="0" width="8" height="8" fill="#001210" fill-opacity="0.82"/>
+    <rect x="0" y="0" width="8" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="8" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="top">
+    <rect x="8" y="0" width="32" height="8" fill="#001210" fill-opacity="0.82"/>
+    <rect x="8" y="0" width="32" height="1" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="topright">
+    <rect x="40" y="0" width="8" height="8" fill="#001210" fill-opacity="0.82"/>
+    <rect x="40" y="0" width="8" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="47" y="0" width="1" height="8" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="left">
+    <rect x="0" y="8" width="8" height="32" fill="#001210" fill-opacity="0.82"/>
+    <rect x="0" y="8" width="1" height="32" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="center">
+    <rect x="8" y="8" width="32" height="32" fill="#001210" fill-opacity="0.82"/>
+  </g>
+  <g id="right">
+    <rect x="40" y="8" width="8" height="32" fill="#001210" fill-opacity="0.82"/>
+    <rect x="47" y="8" width="1" height="32" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="bottomleft">
+    <rect x="0" y="40" width="8" height="8" fill="#001210" fill-opacity="0.82"/>
+    <rect x="0" y="47" width="8" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="0" y="40" width="1" height="8" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="bottom">
+    <rect x="8" y="40" width="32" height="8" fill="#001210" fill-opacity="0.82"/>
+    <rect x="8" y="47" width="32" height="1" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="bottomright">
+    <rect x="40" y="40" width="8" height="8" fill="#001210" fill-opacity="0.82"/>
+    <rect x="40" y="47" width="8" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="47" y="40" width="1" height="8" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="shadow-topleft">
+    <rect x="0" y="0" width="8" height="8" fill="#000000" fill-opacity="0.28"/>
+  </g>
+  <g id="shadow-top">
+    <rect x="8" y="0" width="32" height="8" fill="#000000" fill-opacity="0.28"/>
+  </g>
+  <g id="shadow-topright">
+    <rect x="40" y="0" width="8" height="8" fill="#000000" fill-opacity="0.28"/>
+  </g>
+  <g id="shadow-left">
+    <rect x="0" y="8" width="8" height="32" fill="#000000" fill-opacity="0.28"/>
+  </g>
+  <g id="shadow-center">
+    <rect x="8" y="8" width="32" height="32" fill="#000000" fill-opacity="0.28"/>
+  </g>
+  <g id="shadow-right">
+    <rect x="40" y="8" width="8" height="32" fill="#000000" fill-opacity="0.28"/>
+  </g>
+  <g id="shadow-bottomleft">
+    <rect x="0" y="40" width="8" height="8" fill="#000000" fill-opacity="0.28"/>
+  </g>
+  <g id="shadow-bottom">
+    <rect x="8" y="40" width="32" height="8" fill="#000000" fill-opacity="0.28"/>
+  </g>
+  <g id="shadow-bottomright">
+    <rect x="40" y="40" width="8" height="8" fill="#000000" fill-opacity="0.28"/>
+  </g>
+  <rect id="hint-tile-center" x="0" y="0" width="1" height="1"/>
+</svg>

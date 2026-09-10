@@ -92,6 +92,12 @@ def main():
                 for name in row:
                     lines.append(f'  <use id="{orient}{state}-{name}"'
                                  f' xlink:href="#{state}-{name}"/>')
+    # grouped-task expander marks, one per panel edge
+    for edge, pts in [("top", "3,7 6,3 9,7"), ("bottom", "3,3 6,7 9,3"),
+                      ("left", "7,3 3,6 7,9"), ("right", "3,3 7,6 3,9")]:
+        lines.append(f'  <polyline id="group-expander-{edge}"'
+                     f' points="{pts}" fill="none" stroke="#5eead4"'
+                     f' stroke-width="1.5" stroke-linecap="square"/>')
     lines.append('</svg>')
     print("\n".join(lines))
 

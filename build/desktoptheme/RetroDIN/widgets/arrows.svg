@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="22" viewBox="0 0 88 22">
+  <polyline id="up-arrow" points="6,13.5 11,8.5 16,13.5" fill="none" stroke="#5eead4" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+  <polyline id="down-arrow" points="28,8.5 33,13.5 38,8.5" fill="none" stroke="#5eead4" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+  <polyline id="left-arrow" points="57.5,6 52.5,11 57.5,16" fill="none" stroke="#5eead4" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+  <polyline id="right-arrow" points="74.5,6 79.5,11 74.5,16" fill="none" stroke="#5eead4" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

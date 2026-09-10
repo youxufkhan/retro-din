@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="365" height="48" viewBox="0 0 365 48">
+  <g id="topleft">
+    <rect x="0" y="0" width="8" height="8" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="0" width="8" height="2" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="0" y="0" width="2" height="8" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="top">
+    <rect x="8" y="0" width="48" height="8" fill="#001210" fill-opacity="1"/>
+    <rect x="8" y="0" width="48" height="2" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="topright">
+    <rect x="56" y="0" width="8" height="8" fill="#001210" fill-opacity="1"/>
+    <rect x="56" y="0" width="8" height="2" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="62" y="0" width="2" height="8" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="left">
+    <rect x="0" y="8" width="8" height="32" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="8" width="2" height="32" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="center">
+    <rect x="8" y="8" width="48" height="32" fill="#001210" fill-opacity="1"/>
+  </g>
+  <g id="right">
+    <rect x="56" y="8" width="8" height="32" fill="#001210" fill-opacity="1"/>
+    <rect x="62" y="8" width="2" height="32" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="bottomleft">
+    <rect x="0" y="40" width="8" height="8" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="46" width="8" height="2" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="0" y="40" width="2" height="8" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="bottom">
+    <rect x="8" y="40" width="48" height="8" fill="#001210" fill-opacity="1"/>
+    <rect x="8" y="46" width="48" height="2" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="bottomright">
+    <rect x="56" y="40" width="8" height="8" fill="#001210" fill-opacity="1"/>
+    <rect x="56" y="46" width="8" height="2" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="62" y="40" width="2" height="8" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <rect id="HIGHLIGHT_PI2_1_-4" x="64" y="0" width="6" height="6" fill="#ff8fc0" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_PI2_2_" x="71" y="0" width="6" height="6" fill="#ff8fc0" fill-opacity="0.55"/>
+  <rect id="PINK_1_3_" x="78" y="0" width="6" height="6" fill="#ff8fc0" fill-opacity="1"/>
+  <rect id="PINK_2_3_" x="85" y="0" width="6" height="6" fill="#ff8fc0" fill-opacity="1"/>
+  <rect id="VIOLET_1_3_" x="92" y="0" width="6" height="6" fill="#0d6b60" fill-opacity="1"/>
+  <rect id="VIOLET_2_3_" x="99" y="0" width="6" height="6" fill="#0d6b60" fill-opacity="1"/>
+  <rect id="BLUE_1_3_" x="106" y="0" width="6" height="6" fill="#14b8a6" fill-opacity="1"/>
+  <rect id="BLUE_2_3_" x="113" y="0" width="6" height="6" fill="#14b8a6" fill-opacity="1"/>
+  <rect id="BLUE_3_3_" x="120" y="0" width="6" height="6" fill="#14b8a6" fill-opacity="1"/>
+  <rect id="BLUE_4_3_" x="127" y="0" width="6" height="6" fill="#14b8a6" fill-opacity="1"/>
+  <rect id="GREEN_1_1_" x="134" y="0" width="6" height="6" fill="#4fd98a" fill-opacity="1"/>
+  <rect id="GREEN_2_1_" x="141" y="0" width="6" height="6" fill="#4fd98a" fill-opacity="1"/>
+  <rect id="GREEN_3_1_" x="148" y="0" width="6" height="6" fill="#4fd98a" fill-opacity="1"/>
+  <rect id="GREEN_4_1_" x="155" y="0" width="6" height="6" fill="#4fd98a" fill-opacity="1"/>
+  <rect id="RED_x2F_ORANGE_1_2_" x="162" y="0" width="6" height="6" fill="#ffb454" fill-opacity="1"/>
+  <rect id="RED_x2F_ORANGE_2_1_" x="169" y="0" width="6" height="6" fill="#ffb454" fill-opacity="1"/>
+  <rect id="RED_x2F_ORANGE_3_2_" x="176" y="0" width="6" height="6" fill="#ffb454" fill-opacity="1"/>
+  <rect id="RED_x2F_ORANGE_4_1_" x="183" y="0" width="6" height="6" fill="#ffb454" fill-opacity="1"/>
+  <rect id="RED_x2F_ORANGE_5_2_-8" x="190" y="0" width="6" height="6" fill="#ffb454" fill-opacity="1"/>
+  <rect id="HIGHLIGHTS_RO1_2_" x="197" y="0" width="6" height="6" fill="#ffb454" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHTS_RO2_1_" x="204" y="0" width="6" height="6" fill="#ffb454" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHTS_RO3_2_" x="211" y="0" width="6" height="6" fill="#ffb454" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHTS_RO4_2_" x="218" y="0" width="6" height="6" fill="#ffb454" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHTS_RO5_1_" x="225" y="0" width="6" height="6" fill="#ffb454" fill-opacity="0.55"/>
+  <rect id="GRAY_1_1_" x="232" y="0" width="6" height="6" fill="#7e9295" fill-opacity="1"/>
+  <rect id="GRAY_2_1_" x="239" y="0" width="6" height="6" fill="#7e9295" fill-opacity="1"/>
+  <rect id="GRAY_3_1_" x="246" y="0" width="6" height="6" fill="#7e9295" fill-opacity="1"/>
+  <rect id="GRAY_4_1_" x="253" y="0" width="6" height="6" fill="#7e9295" fill-opacity="1"/>
+  <rect id="GRAY_5_1_" x="260" y="0" width="6" height="6" fill="#7e9295" fill-opacity="1"/>
+  <rect id="HIGHLIGHT_VIO1_1_" x="267" y="0" width="6" height="6" fill="#0d6b60" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_VIO2_1_" x="274" y="0" width="6" height="6" fill="#0d6b60" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_BLU1_1_" x="281" y="0" width="6" height="6" fill="#14b8a6" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_BLU2_1_" x="288" y="0" width="6" height="6" fill="#14b8a6" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_BLU3_1_" x="295" y="0" width="6" height="6" fill="#14b8a6" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_BLU4_1_" x="302" y="0" width="6" height="6" fill="#14b8a6" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_GR1_1_" x="309" y="0" width="6" height="6" fill="#4fd98a" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_GR2_1_" x="316" y="0" width="6" height="6" fill="#4fd98a" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_GR3_1_" x="323" y="0" width="6" height="6" fill="#4fd98a" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_GR4_1_" x="330" y="0" width="6" height="6" fill="#4fd98a" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_GRA1_1_" x="337" y="0" width="6" height="6" fill="#7e9295" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_GRA2_1_" x="344" y="0" width="6" height="6" fill="#7e9295" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_GRA3_2_" x="351" y="0" width="6" height="6" fill="#7e9295" fill-opacity="0.55"/>
+  <rect id="HIGHLIGHT_GRA4_2_" x="358" y="0" width="6" height="6" fill="#7e9295" fill-opacity="0.55"/>
+  <rect id="glass" x="8" y="8" width="48" height="16" fill="#ffffff" fill-opacity="0.04"/>
+</svg>

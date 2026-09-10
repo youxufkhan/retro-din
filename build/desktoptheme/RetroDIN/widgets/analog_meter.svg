@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="48" viewBox="0 0 72 48">
+  <g id="background"><rect x="0" y="0" width="64" height="48" fill="#001210"/><path d="M 6 34 A 26 26 0 0 1 58 34" fill="none" stroke="#14b8a6" stroke-width="1.5"/><rect x="31.25" y="6" width="1.5" height="4" fill="#0d6b60" transform="rotate(-60 32 34)"/><rect x="31.25" y="6" width="1.5" height="4" fill="#0d6b60" transform="rotate(-45 32 34)"/><rect x="31.25" y="6" width="1.5" height="4" fill="#0d6b60" transform="rotate(-30 32 34)"/><rect x="31.25" y="6" width="1.5" height="4" fill="#0d6b60" transform="rotate(-15 32 34)"/><rect x="31.25" y="6" width="1.5" height="4" fill="#0d6b60" transform="rotate(0 32 34)"/><rect x="31.25" y="6" width="1.5" height="4" fill="#0d6b60" transform="rotate(15 32 34)"/><rect x="31.25" y="6" width="1.5" height="4" fill="#0d6b60" transform="rotate(30 32 34)"/><rect x="31.25" y="6" width="1.5" height="4" fill="#0d6b60" transform="rotate(45 32 34)"/><rect x="31.25" y="6" width="1.5" height="4" fill="#0d6b60" transform="rotate(60 32 34)"/></g>
+  <rect id="label0" x="8" y="38" width="8" height="6" fill="#0d6b60" fill-opacity="0.7"/>
+  <rect id="label1" x="48" y="38" width="8" height="6" fill="#0d6b60" fill-opacity="0.7"/>
+  <rect id="pointer" x="31" y="10" width="2" height="26" fill="#ffb454"/>
+  <rect id="pointer-shadow" x="66" y="0" width="2" height="26" fill="#000000" fill-opacity="0"/>
+  <g id="foreground"><circle cx="32" cy="34" r="3" fill="#ffb454"/><rect x="0" y="0" width="64" height="20" fill="#ffffff" fill-opacity="0.03"/></g>
+  <rect id="rotatecenter" x="31" y="33" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="rotateminmax" x="6" y="8" width="52" height="26" fill="none" fill-opacity="0"/>
+</svg>

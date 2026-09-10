@@ -1,24 +1,352 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
   <defs>
-    <radialGradient id="knobgrad" cx="35%" cy="28%" r="75%">
-      <stop offset="0" stop-color="#454b4d"/>
-      <stop offset="1" stop-color="#181c1d"/>
-    </radialGradient>
+    <linearGradient id="metalgrad" gradientUnits="userSpaceOnUse"
+                    x1="0" y1="0" x2="0" y2="32">
+      <stop offset="0" stop-color="#414a4d"/>
+      <stop offset="0.45" stop-color="#272d2f"/>
+      <stop offset="1" stop-color="#14181a"/>
+    </linearGradient>
   </defs>
-  <g id="normal">
-    <circle cx="26" cy="26" r="24" fill="url(#knobgrad)" stroke="#050606" stroke-width="2"/>
-    <circle cx="26" cy="26" r="26" fill="none" stroke="#0d6b60" stroke-width="3"/>
-    <rect x="25" y="6" width="2" height="12" fill="#5eead4"/>
+  <rect id="hint-top-margin" x="0" y="0" width="1" height="4"/>
+  <rect id="hint-bottom-margin" x="0" y="28" width="1" height="4"/>
+  <rect id="hint-left-margin" x="0" y="0" width="4" height="1"/>
+  <rect id="hint-right-margin" x="28" y="0" width="4" height="1"/>
+  <rect id="a" x="0" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="b" x="3" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="c" x="6" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="d" x="9" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="e" x="12" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="pc" x="15" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="sb" x="18" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="sl" x="21" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="sr" x="24" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <rect id="st" x="27" y="0" width="2" height="2" fill="none" fill-opacity="0"/>
+  <g id="normal-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="1" fill="#0d6b60" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="6" fill="#0d6b60" fill-opacity="1"/>
   </g>
-  <g id="hover">
-    <circle cx="26" cy="26" r="24" fill="url(#knobgrad)" stroke="#050606" stroke-width="2"/>
-    <circle cx="26" cy="26" r="26" fill="none" stroke="#14b8a6" stroke-width="3"/>
-    <rect x="25" y="6" width="2" height="12" fill="#5eead4"/>
+  <g id="normal-top">
+    <rect x="6" y="0" width="20" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="1" fill="#0d6b60" fill-opacity="1"/>
   </g>
-  <g id="pressed">
-    <circle cx="26" cy="26" r="23" fill="url(#knobgrad)" stroke="#050606" stroke-width="2"/>
-    <circle cx="26" cy="26" r="26" fill="none" stroke="#ffb454" stroke-width="3"/>
-    <rect x="25" y="7" width="2" height="12" fill="#ffd08a"/>
+  <g id="normal-topright">
+    <rect x="26" y="0" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="1" fill="#0d6b60" fill-opacity="1"/>
+    <rect x="31" y="0" width="1" height="6" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="normal-left">
+    <rect x="0" y="6" width="6" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="6" width="1" height="20" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="normal-center">
+    <rect x="6" y="6" width="20" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+  </g>
+  <g id="normal-right">
+    <rect x="26" y="6" width="6" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="31" y="6" width="1" height="20" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="normal-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="31" width="6" height="1" fill="#0d6b60" fill-opacity="1"/>
+    <rect x="0" y="26" width="1" height="6" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="normal-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="6" y="31" width="20" height="1" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="normal-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="26" y="31" width="6" height="1" fill="#0d6b60" fill-opacity="1"/>
+    <rect x="31" y="26" width="1" height="6" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="hover-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="1" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="6" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="hover-top">
+    <rect x="6" y="0" width="20" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="1" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="hover-topright">
+    <rect x="26" y="0" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="1" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="31" y="0" width="1" height="6" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="hover-left">
+    <rect x="0" y="6" width="6" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="6" width="1" height="20" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="hover-center">
+    <rect x="6" y="6" width="20" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+  </g>
+  <g id="hover-right">
+    <rect x="26" y="6" width="6" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="31" y="6" width="1" height="20" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="hover-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="31" width="6" height="1" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="0" y="26" width="1" height="6" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="hover-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="6" y="31" width="20" height="1" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="hover-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="26" y="31" width="6" height="1" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="31" y="26" width="1" height="6" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="focus-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="0" width="2" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="focus-top">
+    <rect x="6" y="0" width="20" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="2" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="focus-topright">
+    <rect x="26" y="0" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="30" y="0" width="2" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="focus-left">
+    <rect x="0" y="6" width="6" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="6" width="2" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="focus-center">
+    <rect x="6" y="6" width="20" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+  </g>
+  <g id="focus-right">
+    <rect x="26" y="6" width="6" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="30" y="6" width="2" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="focus-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="30" width="6" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="26" width="2" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="focus-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="6" y="30" width="20" height="2" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="focus-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="26" y="30" width="6" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="30" y="26" width="2" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="pressed-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="pressed-top">
+    <rect x="6" y="0" width="20" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="1" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="pressed-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="31" y="0" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="pressed-left">
+    <rect x="0" y="6" width="6" height="20" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="6" width="1" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="pressed-center">
+    <rect x="6" y="6" width="20" height="20" fill="#001210" fill-opacity="1"/>
+  </g>
+  <g id="pressed-right">
+    <rect x="26" y="6" width="6" height="20" fill="#001210" fill-opacity="1"/>
+    <rect x="31" y="6" width="1" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="pressed-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="31" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="26" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="pressed-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="6" y="31" width="20" height="1" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="pressed-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="26" y="31" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="31" y="26" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="shadow-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#000000" fill-opacity="0.3"/>
+  </g>
+  <g id="shadow-top">
+    <rect x="6" y="0" width="20" height="6" fill="#000000" fill-opacity="0.3"/>
+  </g>
+  <g id="shadow-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#000000" fill-opacity="0.3"/>
+  </g>
+  <g id="shadow-left">
+    <rect x="0" y="6" width="6" height="20" fill="#000000" fill-opacity="0.3"/>
+  </g>
+  <g id="shadow-center">
+    <rect x="6" y="6" width="20" height="20" fill="#000000" fill-opacity="0.3"/>
+  </g>
+  <g id="shadow-right">
+    <rect x="26" y="6" width="6" height="20" fill="#000000" fill-opacity="0.3"/>
+  </g>
+  <g id="shadow-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#000000" fill-opacity="0.3"/>
+  </g>
+  <g id="shadow-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#000000" fill-opacity="0.3"/>
+  </g>
+  <g id="shadow-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#000000" fill-opacity="0.3"/>
+  </g>
+  <g id="mask-normal-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#ffffff" fill-opacity="1"/>
+  </g>
+  <g id="mask-normal-top">
+    <rect x="6" y="0" width="20" height="6" fill="#ffffff" fill-opacity="1"/>
+  </g>
+  <g id="mask-normal-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#ffffff" fill-opacity="1"/>
+  </g>
+  <g id="mask-normal-left">
+    <rect x="0" y="6" width="6" height="20" fill="#ffffff" fill-opacity="1"/>
+  </g>
+  <g id="mask-normal-center">
+    <rect x="6" y="6" width="20" height="20" fill="#ffffff" fill-opacity="1"/>
+  </g>
+  <g id="mask-normal-right">
+    <rect x="26" y="6" width="6" height="20" fill="#ffffff" fill-opacity="1"/>
+  </g>
+  <g id="mask-normal-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#ffffff" fill-opacity="1"/>
+  </g>
+  <g id="mask-normal-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#ffffff" fill-opacity="1"/>
+  </g>
+  <g id="mask-normal-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#ffffff" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-hover-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="1" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="6" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-hover-top">
+    <rect x="6" y="0" width="20" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="1" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-hover-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="1" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="31" y="0" width="1" height="6" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-hover-left">
+    <rect x="0" y="6" width="6" height="20" fill="#04201d" fill-opacity="1"/>
+    <rect x="0" y="6" width="1" height="20" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-hover-center">
+    <rect x="6" y="6" width="20" height="20" fill="#04201d" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-hover-right">
+    <rect x="26" y="6" width="6" height="20" fill="#04201d" fill-opacity="1"/>
+    <rect x="31" y="6" width="1" height="20" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-hover-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="0" y="31" width="6" height="1" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="0" y="26" width="1" height="6" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-hover-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="6" y="31" width="20" height="1" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-hover-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="26" y="31" width="6" height="1" fill="#14b8a6" fill-opacity="1"/>
+    <rect x="31" y="26" width="1" height="6" fill="#14b8a6" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-focus-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="0" width="2" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-focus-top">
+    <rect x="6" y="0" width="20" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="2" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-focus-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="30" y="0" width="2" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-focus-left">
+    <rect x="0" y="6" width="6" height="20" fill="#04201d" fill-opacity="1"/>
+    <rect x="0" y="6" width="2" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-focus-center">
+    <rect x="6" y="6" width="20" height="20" fill="#04201d" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-focus-right">
+    <rect x="26" y="6" width="6" height="20" fill="#04201d" fill-opacity="1"/>
+    <rect x="30" y="6" width="2" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-focus-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="0" y="30" width="6" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="26" width="2" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-focus-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="6" y="30" width="20" height="2" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-focus-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#04201d" fill-opacity="1"/>
+    <rect x="26" y="30" width="6" height="2" fill="#ffb454" fill-opacity="1"/>
+    <rect x="30" y="26" width="2" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-pressed-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-pressed-top">
+    <rect x="6" y="0" width="20" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="1" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-pressed-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="31" y="0" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-pressed-left">
+    <rect x="0" y="6" width="6" height="20" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="6" width="1" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-pressed-center">
+    <rect x="6" y="6" width="20" height="20" fill="#001210" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-pressed-right">
+    <rect x="26" y="6" width="6" height="20" fill="#001210" fill-opacity="1"/>
+    <rect x="31" y="6" width="1" height="20" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-pressed-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="31" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="0" y="26" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-pressed-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="6" y="31" width="20" height="1" fill="#ffb454" fill-opacity="1"/>
+  </g>
+  <g id="toolbutton-pressed-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="26" y="31" width="6" height="1" fill="#ffb454" fill-opacity="1"/>
+    <rect x="31" y="26" width="1" height="6" fill="#ffb454" fill-opacity="1"/>
   </g>
 </svg>
