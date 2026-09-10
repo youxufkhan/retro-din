@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <radialGradient id="knob" cx="35%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#454b4d"/>
+      <stop offset="1" stop-color="#181c1d"/>
+    </radialGradient>
+  </defs>
+  <circle cx="24" cy="24" r="21" fill="none" stroke="#14b8a6" stroke-width="3"/>
+  <circle cx="24" cy="24" r="17" fill="url(#knob)" stroke="#050606" stroke-width="2"/>
+  <rect x="23" y="8" width="2" height="9" rx="1" fill="#5eead4"/>
+  <circle cx="24" cy="24" r="2.5" fill="#0d6b60"/>
+</svg>

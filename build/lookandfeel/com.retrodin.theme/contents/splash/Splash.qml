@@ -13,13 +13,16 @@ Rectangle {
         }
     }
 
-    Image {
+    // AnimatedImage, not Image: Image decodes only a GIF's first frame, which
+    // is why the CRT noise sat still
+    AnimatedImage {
         id: noise
         anchors.fill: parent
         source: "images/noise.gif"
         fillMode: Image.PreserveAspectCrop
         opacity: 0.28
-        asynchronous: true
+        playing: true
+        cache: false
     }
 
     Rectangle {

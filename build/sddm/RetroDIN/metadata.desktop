@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=Retro DIN
+Description=90s car-stereo/hi-fi DIN unit login screen
+Author=yousuf khan
+Copyright=Derived from the Breeze SDDM theme, (c) 2014 David Edmundson
+License=CC-BY-SA
+Type=sddm-theme
+Version=1.0
+Screenshot=background.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=RetroDIN
+Theme-API=2.0
+QtVersion=6
