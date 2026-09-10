@@ -92,6 +92,32 @@ def main():
                 for name in row:
                     lines.append(f'  <use id="{orient}{state}-{name}"'
                                  f' xlink:href="#{state}-{name}"/>')
+    # Margin hints must be explicit. Without them FrameSvg derives margins
+    # from the corner artwork - 8px of a 48px button per edge - which leaves
+    # the icon only a third of the height. 2px keeps the bezel readable while
+    # giving the icon nearly the whole button.
+    M = 2
+    prefixes = [f"{o}{s}" for s in STATES for o in ("",) + tuple(ORIENTATIONS)]
+    for prefix in prefixes:
+        lines += [
+            f'  <rect id="{prefix}-hint-top-margin" x="0" y="0"'
+            f' width="{M}" height="{M}"/>',
+            f'  <rect id="{prefix}-hint-bottom-margin" x="0" y="{H - M}"'
+            f' width="{M}" height="{M}"/>',
+            f'  <rect id="{prefix}-hint-left-margin" x="0" y="0"'
+            f' width="{M}" height="{M}"/>',
+            f'  <rect id="{prefix}-hint-right-margin" x="{W - M}" y="0"'
+            f' width="{M}" height="{M}"/>',
+        ]
+    lines += [
+        f'  <rect id="hint-top-margin" x="0" y="0" width="{M}" height="{M}"/>',
+        f'  <rect id="hint-bottom-margin" x="0" y="{H - M}"'
+        f' width="{M}" height="{M}"/>',
+        f'  <rect id="hint-left-margin" x="0" y="0" width="{M}" height="{M}"/>',
+        f'  <rect id="hint-right-margin" x="{W - M}" y="0"'
+        f' width="{M}" height="{M}"/>',
+    ]
+
     # grouped-task expander marks, one per panel edge
     for edge, pts in [("top", "3,7 6,3 9,7"), ("bottom", "3,3 6,7 9,3"),
                       ("left", "7,3 3,6 7,9"), ("right", "3,3 7,6 3,9")]:

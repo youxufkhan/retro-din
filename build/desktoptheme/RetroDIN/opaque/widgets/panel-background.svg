@@ -12,10 +12,10 @@
   </defs>
 
   <!-- margin hints: 6px safe area on every edge before content may draw -->
-  <rect id="hint-top-margin" x="0" y="0" width="1" height="6"/>
-  <rect id="hint-bottom-margin" x="0" y="58" width="1" height="6"/>
-  <rect id="hint-left-margin" x="0" y="0" width="6" height="1"/>
-  <rect id="hint-right-margin" x="58" y="0" width="6" height="1"/>
+  <rect id="hint-top-margin" x="0" y="0" width="1" height="3"/>
+  <rect id="hint-bottom-margin" x="0" y="61" width="1" height="3"/>
+  <rect id="hint-left-margin" x="0" y="0" width="3" height="1"/>
+  <rect id="hint-right-margin" x="61" y="0" width="3" height="1"/>
 
   <rect id="topleft" x="0" y="0" width="8" height="8" fill="url(#metalgrad)"/>
   <rect id="topright" x="56" y="0" width="8" height="8" fill="url(#metalgrad)"/>
