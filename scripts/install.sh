@@ -20,10 +20,10 @@ ln -sfT "$(pwd)/build/lookandfeel/com.retrodin.theme" \
 mkdir -p ~/.local/share/wallpapers
 ln -sfT "$(pwd)/build/wallpapers/RetroDIN-lockwall" \
     ~/.local/share/wallpapers/RetroDIN-lockwall
-if [ ! -d build/icons/RetroDIN ]; then
-    echo "build/icons/RetroDIN missing - run scripts/gen_icons.py first" >&2
-    exit 1
-fi
+# the icon theme is generated: DIN status glyphs first, then the recoloured
+# breeze base they overlay onto
+python3 scripts/gen_din_icons.py
+python3 scripts/gen_icons.py
 mkdir -p ~/.local/share/icons
 ln -sfT "$(pwd)/build/icons/RetroDIN" \
     ~/.local/share/icons/RetroDIN
