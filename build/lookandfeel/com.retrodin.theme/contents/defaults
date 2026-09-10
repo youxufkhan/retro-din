@@ -2,7 +2,7 @@
 ColorScheme=RetroDIN
 
 [kdeglobals][KDE]
-widgetStyle=Breeze
+widgetStyle=kvantum
 
 [kdeglobals][Icons]
 Theme=RetroDIN
@@ -16,3 +16,6 @@ name=RetroDIN
 
 [Wallpaper]
 Image=RetroDIN-lockwall
+
+[KSplash]
+Theme=com.retrodin.theme

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="metalgrad" gradientUnits="userSpaceOnUse"
+                    x1="0" y1="0" x2="0" y2="32">
+      <stop offset="0" stop-color="#414a4d"/>
+      <stop offset="0.45" stop-color="#272d2f"/>
+      <stop offset="1" stop-color="#14181a"/>
+    </linearGradient>
+  </defs>
+  <rect id="hint-top-margin" x="0" y="0" width="1" height="4"/>
+  <rect id="hint-bottom-margin" x="0" y="28" width="1" height="4"/>
+  <rect id="hint-left-margin" x="0" y="0" width="4" height="1"/>
+  <rect id="hint-right-margin" x="28" y="0" width="4" height="1"/>
+  <rect id="hint-tile-center" x="0" y="0" width="1" height="1"/>
+  <rect id="border-bottomleft" x="0" y="24" width="8" height="8" fill="none" fill-opacity="0"/>
+  <g id="plain-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#001210" fill-opacity="0"/>
+    <rect x="0" y="0" width="6" height="1" fill="#0d6b60" fill-opacity="0.5"/>
+    <rect x="0" y="0" width="1" height="6" fill="#0d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="plain-top">
+    <rect x="6" y="0" width="20" height="6" fill="#001210" fill-opacity="0"/>
+    <rect x="6" y="0" width="20" height="1" fill="#0d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="plain-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#001210" fill-opacity="0"/>
+    <rect x="26" y="0" width="6" height="1" fill="#0d6b60" fill-opacity="0.5"/>
+    <rect x="31" y="0" width="1" height="6" fill="#0d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="plain-left">
+    <rect x="0" y="6" width="6" height="20" fill="#001210" fill-opacity="0"/>
+    <rect x="0" y="6" width="1" height="20" fill="#0d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="plain-center">
+    <rect x="6" y="6" width="20" height="20" fill="#001210" fill-opacity="0"/>
+  </g>
+  <g id="plain-right">
+    <rect x="26" y="6" width="6" height="20" fill="#001210" fill-opacity="0"/>
+    <rect x="31" y="6" width="1" height="20" fill="#0d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="plain-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#001210" fill-opacity="0"/>
+    <rect x="0" y="31" width="6" height="1" fill="#0d6b60" fill-opacity="0.5"/>
+    <rect x="0" y="26" width="1" height="6" fill="#0d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="plain-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#001210" fill-opacity="0"/>
+    <rect x="6" y="31" width="20" height="1" fill="#0d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="plain-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#001210" fill-opacity="0"/>
+    <rect x="26" y="31" width="6" height="1" fill="#0d6b60" fill-opacity="0.5"/>
+    <rect x="31" y="26" width="1" height="6" fill="#0d6b60" fill-opacity="0.5"/>
+  </g>
+  <g id="raised-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="1" fill="#0d6b60" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="6" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="raised-top">
+    <rect x="6" y="0" width="20" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="1" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="raised-topright">
+    <rect x="26" y="0" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="1" fill="#0d6b60" fill-opacity="1"/>
+    <rect x="31" y="0" width="1" height="6" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="raised-left">
+    <rect x="0" y="6" width="6" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="6" width="1" height="20" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="raised-center">
+    <rect x="6" y="6" width="20" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+  </g>
+  <g id="raised-right">
+    <rect x="26" y="6" width="6" height="20" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="31" y="6" width="1" height="20" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="raised-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="31" width="6" height="1" fill="#0d6b60" fill-opacity="1"/>
+    <rect x="0" y="26" width="1" height="6" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="raised-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="6" y="31" width="20" height="1" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="raised-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="26" y="31" width="6" height="1" fill="#0d6b60" fill-opacity="1"/>
+    <rect x="31" y="26" width="1" height="6" fill="#0d6b60" fill-opacity="1"/>
+  </g>
+  <g id="sunken-topleft">
+    <rect x="0" y="0" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="0" width="6" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="0" y="0" width="1" height="6" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="sunken-top">
+    <rect x="6" y="0" width="20" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="6" y="0" width="20" height="1" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="sunken-topright">
+    <rect x="26" y="0" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="26" y="0" width="6" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="31" y="0" width="1" height="6" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="sunken-left">
+    <rect x="0" y="6" width="6" height="20" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="6" width="1" height="20" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="sunken-center">
+    <rect x="6" y="6" width="20" height="20" fill="#001210" fill-opacity="1"/>
+  </g>
+  <g id="sunken-right">
+    <rect x="26" y="6" width="6" height="20" fill="#001210" fill-opacity="1"/>
+    <rect x="31" y="6" width="1" height="20" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="sunken-bottomleft">
+    <rect x="0" y="26" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="0" y="31" width="6" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="0" y="26" width="1" height="6" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="sunken-bottom">
+    <rect x="6" y="26" width="20" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="6" y="31" width="20" height="1" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+  <g id="sunken-bottomright">
+    <rect x="26" y="26" width="6" height="6" fill="#001210" fill-opacity="1"/>
+    <rect x="26" y="31" width="6" height="1" fill="#0a2e29" fill-opacity="1"/>
+    <rect x="31" y="26" width="1" height="6" fill="#0a2e29" fill-opacity="1"/>
+  </g>
+</svg>

@@ -27,4 +27,7 @@ fi
 mkdir -p ~/.local/share/icons
 ln -sfT "$(pwd)/build/icons/RetroDIN" \
     ~/.local/share/icons/RetroDIN
+mkdir -p ~/.config/Kvantum
+ln -sfT "$(pwd)/build/kvantum/RetroDIN" \
+    ~/.config/Kvantum/RetroDIN
 echo "Installed (symlinked). Run plasma-apply-colorscheme RetroDIN to test the color scheme now."

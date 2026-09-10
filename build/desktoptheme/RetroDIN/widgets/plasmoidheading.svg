@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="metalgrad" gradientUnits="userSpaceOnUse"
+                    x1="0" y1="0" x2="0" y2="64">
+      <stop offset="0" stop-color="#414a4d"/>
+      <stop offset="0.45" stop-color="#272d2f"/>
+      <stop offset="1" stop-color="#14181a"/>
+    </linearGradient>
+  </defs>
+  <rect id="hint-top-margin" x="0" y="0" width="1" height="4"/>
+  <rect id="hint-bottom-margin" x="0" y="60" width="1" height="4"/>
+  <rect id="hint-left-margin" x="0" y="0" width="4" height="1"/>
+  <rect id="hint-right-margin" x="60" y="0" width="4" height="1"/>
+  <rect id="hint-stretch-borders" x="0" y="0" width="1" height="1"/>
+  <g id="header-topleft">
+    <rect x="0" y="0" width="8" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="8" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+    <rect x="0" y="0" width="1" height="8" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="header-top">
+    <rect x="8" y="0" width="48" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="8" y="0" width="48" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="header-topright">
+    <rect x="56" y="0" width="8" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="56" y="0" width="8" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+    <rect x="63" y="0" width="1" height="8" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="header-left">
+    <rect x="0" y="8" width="8" height="48" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="8" width="1" height="48" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="header-center">
+    <rect x="8" y="8" width="48" height="48" fill="url(#metalgrad)" fill-opacity="1"/>
+  </g>
+  <g id="header-right">
+    <rect x="56" y="8" width="8" height="48" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="63" y="8" width="1" height="48" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="header-bottomleft">
+    <rect x="0" y="56" width="8" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="63" width="8" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+    <rect x="0" y="56" width="1" height="8" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="header-bottom">
+    <rect x="8" y="56" width="48" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="8" y="63" width="48" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="header-bottomright">
+    <rect x="56" y="56" width="8" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="56" y="63" width="8" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+    <rect x="63" y="56" width="1" height="8" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="footer-topleft">
+    <rect x="0" y="0" width="8" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="0" width="8" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+    <rect x="0" y="0" width="1" height="8" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="footer-top">
+    <rect x="8" y="0" width="48" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="8" y="0" width="48" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="footer-topright">
+    <rect x="56" y="0" width="8" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="56" y="0" width="8" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+    <rect x="63" y="0" width="1" height="8" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="footer-left">
+    <rect x="0" y="8" width="8" height="48" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="8" width="1" height="48" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="footer-center">
+    <rect x="8" y="8" width="48" height="48" fill="url(#metalgrad)" fill-opacity="1"/>
+  </g>
+  <g id="footer-right">
+    <rect x="56" y="8" width="8" height="48" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="63" y="8" width="1" height="48" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="footer-bottomleft">
+    <rect x="0" y="56" width="8" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="0" y="63" width="8" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+    <rect x="0" y="56" width="1" height="8" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="footer-bottom">
+    <rect x="8" y="56" width="48" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="8" y="63" width="48" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+  <g id="footer-bottomright">
+    <rect x="56" y="56" width="8" height="8" fill="url(#metalgrad)" fill-opacity="1"/>
+    <rect x="56" y="63" width="8" height="1" fill="#0d6b60" fill-opacity="0.6"/>
+    <rect x="63" y="56" width="1" height="8" fill="#0d6b60" fill-opacity="0.6"/>
+  </g>
+</svg>
