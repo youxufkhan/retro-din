@@ -1,3 +1,4 @@
 .superpowers/
 build/desktoptheme/RetroDIN/colors
 build/icons/RetroDIN/
+__pycache__/
