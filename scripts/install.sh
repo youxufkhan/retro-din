@@ -7,7 +7,7 @@ ln -sfT "$(pwd)/build/color-schemes/RetroDIN.colors" \
     ~/.local/share/color-schemes/RetroDIN.colors
 # Plasma widgets and systray glyphs read colours from the desktoptheme's own
 # colors file, not kdeglobals; without it they fall back to breeze-dark white.
-cp build/color-schemes/RetroDIN.colors build/desktoptheme/RetroDIN/colors
+python3 scripts/gen_theme_colors.py
 mkdir -p ~/.local/share/plasma/desktoptheme
 ln -sfT "$(pwd)/build/desktoptheme/RetroDIN" \
     ~/.local/share/plasma/desktoptheme/RetroDIN
@@ -20,6 +20,10 @@ ln -sfT "$(pwd)/build/lookandfeel/com.retrodin.theme" \
 mkdir -p ~/.local/share/wallpapers
 ln -sfT "$(pwd)/build/wallpapers/RetroDIN-lockwall" \
     ~/.local/share/wallpapers/RetroDIN-lockwall
+if [ ! -d build/icons/RetroDIN ]; then
+    echo "build/icons/RetroDIN missing - run scripts/gen_icons.py first" >&2
+    exit 1
+fi
 mkdir -p ~/.local/share/icons
 ln -sfT "$(pwd)/build/icons/RetroDIN" \
     ~/.local/share/icons/RetroDIN
