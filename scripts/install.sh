@@ -23,6 +23,7 @@ ln -sfT "$(pwd)/build/wallpapers/RetroDIN-lockwall" \
 # the icon theme is generated: DIN status glyphs first, then the recoloured
 # breeze base they overlay onto
 python3 scripts/gen_din_icons.py
+python3 scripts/gen_app_icons.py
 python3 scripts/gen_icons.py
 mkdir -p ~/.local/share/icons
 ln -sfT "$(pwd)/build/icons/RetroDIN" \
