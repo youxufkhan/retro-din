@@ -3,9 +3,17 @@
 # reads themes from /usr/share and its config from /etc.
 #
 # Deliberately additive: the theme is copied to a new directory and selected
-# through a new 99-retrodin.conf, which sorts last and therefore wins. The
-# distribution's own kde_settings.conf is left untouched, so reverting is
-# "rm /etc/sddm.conf.d/99-retrodin.conf" and nothing else.
+# through a drop-in, leaving the distribution's kde_settings.conf untouched,
+# so reverting is one rm.
+#
+# The drop-in is named zz-retrodin.conf, not 99-retrodin.conf. SDDM reads
+# /etc/sddm.conf.d/ in plain alphabetical order and letters sort after digits,
+# so kde_settings.conf and kubuntu_settings.conf both override a 99- file.
+# Only a name sorting after those actually wins.
+#
+# Consequence worth knowing: this then also overrides whatever System Settings
+# writes into kde_settings.conf, so picking a different login theme in the GUI
+# will look like it does nothing until this file is removed.
 #
 # The greeter runs as the sddm user and cannot read /home, so the wallpaper
 # and logo are copied into the theme directory rather than referenced.
@@ -29,9 +37,10 @@ cp -r "$SRC/." "$DEST/"
 chown -R root:root "$DEST"
 chmod -R a+rX "$DEST"
 
-echo "Selecting it in /etc/sddm.conf.d/99-retrodin.conf"
+echo "Selecting it in /etc/sddm.conf.d/zz-retrodin.conf"
 mkdir -p /etc/sddm.conf.d
-cat > /etc/sddm.conf.d/99-retrodin.conf <<'EOF'
+rm -f /etc/sddm.conf.d/99-retrodin.conf
+cat > /etc/sddm.conf.d/zz-retrodin.conf <<'EOF'
 [Theme]
 Current=RetroDIN
 EOF
@@ -41,4 +50,4 @@ echo "Done. Verify before logging out:"
 echo "  sddm-greeter-qt6 --test-mode --theme $DEST"
 echo
 echo "To revert:"
-echo "  sudo rm /etc/sddm.conf.d/99-retrodin.conf"
+echo "  sudo rm /etc/sddm.conf.d/zz-retrodin.conf"
