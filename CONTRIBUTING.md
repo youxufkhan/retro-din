@@ -17,7 +17,8 @@ will be silently overwritten by the next `scripts/install.sh` run.
 - `python3 scripts/render_check.py <file.svg>` — renders a contact sheet
   and reports any element that fails to draw. Use this over ImageMagick's
   `convert`, which has given false negatives on gradients and glyphs that
-  Qt renders correctly.
+  Qt renders correctly. Needs `python3-pyqt6.qtsvg` (Debian/Ubuntu) —
+  base `PyQt6` doesn't include the SVG bindings on its own.
 - `python3 scripts/validate.py svg <file> <element-ids...>` — checks a set
   of element IDs resolve in an SVG.
 - After a desktoptheme or icon change, re-run `scripts/install.sh` and

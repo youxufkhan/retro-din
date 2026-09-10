@@ -18,10 +18,9 @@ Nine independently-installable KDE packages, all under one repo:
 | Color scheme | `color-schemes/RetroDIN.colors` | `kdeglobals`-level app colors (Tier 2, see below) |
 | Desktoptheme (Plasma Style) | `desktoptheme/RetroDIN/` | Panel, task buttons, menus, tooltips, OSD, pager — 43/43 assets, full parity with the default theme |
 | Aurorae window decoration | `aurorae/RetroDIN/` | Titlebar, minimize/maximize/close |
-| Look-and-feel (global theme) | `lookandfeel/com.retrodin.theme/` | Wires everything else together: color scheme, Aurorae, desktoptheme, icon theme, Kvantum, panel layout, splash |
+| Look-and-feel (global theme) | `lookandfeel/com.retrodin.theme/` | Wires everything else together: color scheme, Aurorae, desktoptheme, icon theme, Kvantum, panel layout, and the animated CRT-noise boot splash |
 | Icon theme | `icons/RetroDIN/` | Full teal recolor of Breeze Dark, plus 357 hand-generated status/tray icons and 101 app icons |
 | Kvantum style | `kvantum/RetroDIN/` | Qt app interiors (Dolphin, Kate, browsers) — colour remap of KvDark |
-| Boot splash | inside the look-and-feel package | Animated CRT-noise `Splash.qml` |
 | Lock-screen wallpaper plugin | `wallpapers/com.retrodin.crtnoise/` | Animated CRT noise on the lock screen (the stock `org.kde.image` plugin can't animate) |
 | Desktop wallpaper | `wallpapers/RetroDIN-lockwall/` | Still charcoal/CRT composite used as the default desktop background |
 | SDDM login theme | `sddm/RetroDIN/` | Animated login screen, derived from Breeze SDDM |
@@ -91,9 +90,20 @@ icons/             kvantum/         sddm/       wallpapers/
 assets/            scripts/         docs/
 ```
 
-`icons/RetroDIN/` (the ~40MB generated icon tree) and the three `*.gif`
-frame assets are gitignored — `scripts/install.sh` regenerates/copies them.
-Only their sources (`icons/RetroDIN-src/`, `assets/noise.gif`) are tracked.
+Generated output is gitignored, not tracked — `scripts/install.sh` rebuilds
+it every run:
+
+- `icons/RetroDIN/` (the ~40MB recolored icon tree)
+- `icons/RetroDIN-src/status/` and `icons/RetroDIN-src/apps/` (the 357
+  status/tray and 101 app icons `scripts/gen_din_icons.py` and
+  `scripts/gen_app_icons.py` draw parametrically — there's no source SVG
+  to edit for these, only the generator)
+- `desktoptheme/RetroDIN/colors`
+- the three `*.gif` noise-loop copies
+
+Only `assets/noise.gif` (the one committed source loop) and the 8
+hand-authored files under `icons/RetroDIN-src/` (the launcher glyph and its
+aliases) are tracked as actual icon/asset sources.
 
 See `scripts/` for the generators — most desktoptheme/icon assets are
 parametric (drawn by a Python script from a small spec table), not

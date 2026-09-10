@@ -62,12 +62,14 @@ Read straight from what's already in this repo — no guessing needed:
   khan` already. The others don't set an author field explicitly — add one
   if the Store form requires it per package
   (`X-KDE-PluginInfo-Author=`/`"Author":`).
-- **Generated assets must be built before packaging.** `icons/RetroDIN/`
-  and the three GIF frames are gitignored — they don't exist until
-  `scripts/install.sh` runs. A Store download of a raw `git archive` would
-  be missing them. Either run the install/generator scripts and package
-  the *output*, or make sure the description makes clear the user needs to
-  run `scripts/install.sh` themselves (requires Python 3, no extra
+- **Generated assets must be built before packaging.** `icons/RetroDIN/`,
+  `icons/RetroDIN-src/status/`, `icons/RetroDIN-src/apps/`,
+  `desktoptheme/RetroDIN/colors`, and the three GIF frame copies are all
+  gitignored — none of them exist until `scripts/install.sh` runs. A Store
+  download of a raw `git archive` would be missing all of them. Either run
+  the install/generator scripts and package the *output*, or make sure the
+  description makes clear the user needs to run `scripts/install.sh`
+  themselves (requires Python 3, no extra
   packages).
 
 ## Packaging per category (if you go the multi-entry route)

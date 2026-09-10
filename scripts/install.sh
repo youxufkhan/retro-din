@@ -27,7 +27,10 @@ python3 scripts/gen_app_icons.py
 python3 scripts/gen_icons.py
 mkdir -p ~/.local/share/plasma/wallpapers
 # the animated wallpaper plugin: the lock screen renders a wallpaper plugin,
-# and org.kde.image only ever draws a still frame
+# and org.kde.image only ever draws a still frame. images/ dirs are gitignored
+# (they hold only the generated gif), so a fresh clone doesn't have them yet.
+mkdir -p wallpapers/com.retrodin.crtnoise/contents/images \
+    lookandfeel/com.retrodin.theme/contents/splash/images
 cp assets/noise.gif \
     wallpapers/com.retrodin.crtnoise/contents/images/noise.gif
 cp assets/noise.gif \
