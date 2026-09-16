@@ -4,6 +4,7 @@
         "Id": "com.retrodin.theme",
         "Name": "Retro DIN",
         "Description": "90s car-stereo/hi-fi DIN unit global theme",
+        "Authors": [{"Name": "yousuf khan (youxufkhan)"}],
         "Category": "Global Themes (Plasma 6)",
         "ServiceTypes": ["Plasma/LookAndFeel"],
         "EnabledByDefault": true,

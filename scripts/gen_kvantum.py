@@ -86,7 +86,7 @@ def build_config():
     text = re.sub(r"^comment=.*$", "comment=90s car-stereo/hi-fi DIN unit style",
                   text, flags=re.MULTILINE)
     text = re.sub(r"^author=.*$",
-                  "author=yousuf khan (colour remap of Tsu Jan's KvDark)",
+                  "author=yousuf khan (youxufkhan), colour remap of Tsu Jan's KvDark",
                   text, flags=re.MULTILINE)
     return text
 

@@ -4,6 +4,7 @@
         "Id": "RetroDIN",
         "Name": "Retro DIN",
         "Description": "90s car-stereo/hi-fi DIN unit aesthetic Plasma Style",
+        "Authors": [{"Name": "yousuf khan (youxufkhan)"}],
         "ServiceTypes": ["Plasma/Theme"],
         "Version": "1.0",
         "License": "GPL-3.0",
