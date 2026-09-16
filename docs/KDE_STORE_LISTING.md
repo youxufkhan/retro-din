@@ -82,6 +82,24 @@ plasma6, plasma, global-theme, dark-theme, retro, icon-theme, kvantum, sddm
 **Plasma Global Themes** (see `docs/KDE_STORE_SUBMISSION.md` if you decide
 to also submit components separately under their own categories).
 
+## CC-BY credit field
+
+The only CC-licensed component here is the SDDM login theme (derived from
+Breeze, CC-BY-SA — the rest of the repo is GPL-3.0-or-later, see
+`NOTICE.md`). Paste:
+
+```
+SDDM login theme background and greeter scripts (Main.qml, Login.qml,
+KeyboardButton.qml, SessionButton.qml, Messages.sh) are derived from the
+Breeze SDDM theme, © 2014 David Edmundson, part of KDE Plasma
+(https://invent.kde.org/plasma/breeze), licensed CC-BY-SA.
+```
+
+## Logo
+
+Upload `assets/logo.png` (512×512, rotary-knob mark matching the theme —
+source at `assets/logo.svg`).
+
 ---
 
 Before pasting: replace `<your GitHub repo URL here>` with the actual repo
