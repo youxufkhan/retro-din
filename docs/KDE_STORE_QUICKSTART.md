@@ -68,13 +68,9 @@ component most people will search for.
 
 ## 7. Fill in the listing
 
-- **Title**: Retro DIN
-- **Description**: paste the intro from `README.md` (the first paragraph
-  plus the "What's in it" table), then add a line telling people to run
-  `scripts/install.sh` after extracting — this is not a one-click GHNS
-  install, it's a script-installed bundle. Mention Kvantum is a separate
-  required dependency, and that the SDDM login theme needs
-  `sudo scripts/install-sddm.sh` as an extra step.
+Copy title, description, license note, and tags straight from
+`docs/KDE_STORE_LISTING.md` — replace the placeholder repo URL in it with
+your actual GitHub URL first.
 - **License**: GPL-3.0-or-later (there's a dropdown). Note the SDDM
   component's CC-BY-SA origin in the description text — see `NOTICE.md`.
 - **Tags**: plasma, plasma6, theme, global theme, dark, retro (whatever's
