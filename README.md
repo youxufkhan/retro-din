@@ -119,9 +119,6 @@ change followed by re-running the relevant `scripts/gen_*.py`.
 - `docs/KDE_STORE_SUBMISSION.md` — the full packaging guide behind it
   (category mapping, license notes, why a single bundle instead of nine
   separate listings).
-- `docs/history/` — the original design spec and implementation plan this
-  theme was built from (kept for reference; some details are superseded by
-  later work — see the note at the top of that directory).
 - `NOTICE.md` — third-party attribution (Breeze, KvDark, Breeze Dark icons).
 
 ## License
