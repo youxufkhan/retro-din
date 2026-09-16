@@ -114,8 +114,11 @@ change followed by re-running the relevant `scripts/gen_*.py`.
 
 - `CHANGELOG.md` — what shipped, grouped by area.
 - `ROADMAP.md` — known gaps and ideas for more.
-- `docs/KDE_STORE_SUBMISSION.md` — guide for publishing this to
-  [store.kde.org](https://store.kde.org).
+- `docs/KDE_STORE_QUICKSTART.md` — short numbered steps to package and
+  upload this to [store.kde.org](https://store.kde.org).
+- `docs/KDE_STORE_SUBMISSION.md` — the full packaging guide behind it
+  (category mapping, license notes, why a single bundle instead of nine
+  separate listings).
 - `docs/history/` — the original design spec and implementation plan this
   theme was built from (kept for reference; some details are superseded by
   later work — see the note at the top of that directory).
